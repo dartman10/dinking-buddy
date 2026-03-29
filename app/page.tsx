@@ -2,7 +2,19 @@ import Link from "next/link";
 import shirts from "@/lib/shirts";
 import ProductCard from "@/components/ProductCard";
 
+function shuffled<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
+  const featured = shuffled(shirts).slice(0, 10);
   return (
     <main>
       <section className="bg-brand-green text-white py-24 px-4 text-center">
@@ -25,7 +37,7 @@ export default function HomePage() {
           Featured Shirts
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {shirts.map((shirt) => (
+          {featured.map((shirt) => (
             <ProductCard key={shirt.id} shirt={shirt} />
           ))}
         </div>

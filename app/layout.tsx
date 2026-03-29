@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -25,6 +26,9 @@ export const metadata: Metadata = {
   description:
     "Pickleball-themed shirts for players who love the game. Curated designs, shipped from Amazon.",
   metadataBase: new URL("https://dinkingbuddy.com"),
+  verification: {
+    google: "GOOGLE_SEARCH_CONSOLE_ID",
+  },
   openGraph: {
     siteName: "DinkingBuddy",
     type: "website",
@@ -45,6 +49,7 @@ export default function RootLayout({
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

@@ -18,6 +18,12 @@ export default function Header() {
             Shop
           </Link>
           <Link
+            href="/blog"
+            className="hover:text-brand-yellow transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
             href="/about"
             className="hover:text-brand-yellow transition-colors"
           >

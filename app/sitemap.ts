@@ -2,9 +2,11 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://dinkingbuddy.com";
+  const now = new Date();
   return [
-    { url: base, lastModified: new Date("2025-01-01") },
-    { url: `${base}/shop`, lastModified: new Date("2025-01-01") },
-    { url: `${base}/about`, lastModified: new Date("2025-01-01") },
+    { url: base, lastModified: now },
+    { url: `${base}/shop`, lastModified: now },
+    { url: `${base}/about`, lastModified: now },
+    { url: `${base}/blog`, lastModified: now },
   ];
 }
