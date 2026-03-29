@@ -1,6 +1,6 @@
 # DinkingBuddy.com — Project Progress & Spec
 
-> Last updated: 2026-03-29
+> Last updated: 2026-03-28
 
 ---
 
@@ -66,10 +66,13 @@ components/
   ShopGrid.tsx        Client component — tag filter buttons + product grid
 
 lib/
-  shirts.ts           Product catalog array, Shirt interface, AFFILIATE_TAG constant
+  shirts.ts           Product catalog array (197 products), Shirt interface, AFFILIATE_TAG constant
 
 scratch/
   progress.md         This file
+  asin_list.md        Original ASIN list
+  asin_list_100.md    Extended ASIN list (100 entries)
+  generate-shirts.mjs Script to generate shirt catalog entries from ASINs
 ```
 
 ### Data Flow
@@ -101,27 +104,43 @@ product and the infrastructure for many more.
 | 9  | Products 2–12 with copy & tags            | ✅ Done (descriptions written) |
 | 10 | Products 2–10 real ASINs + images         | ✅ Done (9 new products) |
 | 11 | Git repo initialized                      | ✅ Done |
-| 12 | Push to GitHub (dartman10/dinking-buddy)  | ❌ TODO |
-| 13 | Deploy to Vercel                          | ❌ TODO |
-| 14 | Connect DinkingBuddy.com domain           | ❌ TODO |
-| 15 | Update sitemap dates (stuck on 2025-01-01)| ❌ TODO |
+| 12 | Push to GitHub (dartman10/dinking-buddy)  | ✅ Done |
+| 13 | Expand catalog to 25+ products            | ✅ Done (197 products) |
+| 14 | Deploy to Vercel                          | ❌ TODO |
+| 15 | Connect DinkingBuddy.com domain           | ❌ TODO |
+| 16 | Update sitemap dates (stuck on 2025-01-01)| ❌ TODO |
+| 17 | Fetch images for remaining 177 products   | ❌ TODO |
 
-### Product Catalog Status (10 products)
+### Product Catalog Status (197 products)
 
-| ID | Title                                            | ASIN         | Image |
-| -- | ------------------------------------------------ | ------------ | ----- |
-| 1  | Pickleball: Dinking Buddy Premium Tri-Blend      | B0GTVMH4KW  | ✅    |
-| 2  | Pickleball: Dinking Master T-Shirt               | B0GV3YVGHY  | ✅    |
-| 3  | Mens Funny Pickleball T-Shirt – Legend           | B0B1N7F3XQ  | ✅    |
-| 4  | Funny Pickleball Tee – You Just Got Served       | B0CSPS8Y6T  | ✅    |
-| 5  | UPF 50+ Performance Tee – Bigfoot Dink Power     | B0F8898BTK  | ✅    |
-| 6  | UPF 50+ Performance Tee – Day Dink Vibes         | B0F888KKRW  | ✅    |
-| 7  | Life is Good – Keep It Simple Pickleball         | B0C4WTTX34  | ✅    |
-| 8  | I Love It When My Wife Lets Me Play Pickleball   | B08QJCMCMM  | ✅    |
-| 9  | Pickleball: It's Always A Good Time              | B0FJDTZQ9K  | ✅    |
-| 10 | Women's Pickleball Graphic Tee – Was That Out?   | B0C628B9LK  | ✅    |
+- **Total products:** 197
+- **With images:** 20 (IDs 1–20 approx)
+- **Without images (placeholder):** 177
+- **All 197 have:** ASIN, title, description, tags, affiliate URL
 
-> Note: ASIN B07537H64L returned 404 (product unavailable). Catalog reduced from 12 to 10 products.
+#### Tag Distribution
+
+| Tag         | Count |
+| ----------- | ----- |
+| women's     | 106   |
+| graphic     | 89    |
+| funny       | 64    |
+| men's       | 61    |
+| casual      | 55    |
+| performance | 34    |
+| unisex      | 30    |
+| gift        | 30    |
+| tank top    | 28    |
+| premium     | 23    |
+| polo        | 17    |
+| vintage     | 16    |
+| UPF         | 8     |
+| patriotic   | 6     |
+| retirement  | 4     |
+| long sleeve | 2     |
+| tri-blend   | 1     |
+
+> Note: Original ASIN B07537H64L returned 404 (product unavailable) and was excluded.
 
 ---
 
@@ -135,8 +154,9 @@ product and the infrastructure for many more.
 - Vercel deployment + custom domain
 
 ### Phase 2 — Content & Catalog Growth
-- ✅ Linked real ASINs for all products (10 total)
-- Add more products (target: 25–50 shirts)
+- ✅ Linked real ASINs for all products (10 with images)
+- ✅ Expanded catalog to 197 products (exceeds 25–50 target)
+- Fetch images for remaining 177 products
 - Add category pages (funny, gift, women's, men's, kids)
 - Blog with MDX (pickleball tips, gift guides, "best shirts for…" posts)
 - Google Search Console setup + analytics (Vercel Analytics or Plausible)
@@ -186,8 +206,14 @@ product and the infrastructure for many more.
 - Catalog reduced from 12 placeholder to 10 fully linked products
 - All products now have real images, affiliate URLs, and descriptions
 - Updated progress document with new catalog status
+- Added GitHub remote: https://github.com/dartman10/dinking-buddy.git
+- Pushed all code to GitHub (main branch)
+- Added 187 more products via `scratch/generate-shirts.mjs` (197 total)
+- 20 products have real images; 177 use SVG placeholder
+- Tag coverage spans 17 categories (women's: 106, graphic: 89, funny: 64, men's: 61, etc.)
+- Committed bulk addition to GitHub (commit `decc6ac`)
 
 ### Next session priorities
-1. Update sitemap `lastModified` dates to current
-2. Push to GitHub → deploy on Vercel → connect domain
-3. Add more products to grow catalog toward 25+
+1. Update sitemap `lastModified` dates (still hardcoded to 2025-01-01)
+2. Fetch images for remaining 177 products
+3. Deploy on Vercel → connect DinkingBuddy.com domain
