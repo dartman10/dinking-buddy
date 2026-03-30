@@ -45,6 +45,21 @@ export default function RootLayout({
       lang="en"
       className={`${bebasNeue.variable} ${inter.variable} h-full`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "DinkingBuddy",
+              url: "https://dinkingbuddy.com",
+              description:
+                "Pickleball-themed shirts for players who love the game. Curated designs, shipped from Amazon.",
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col font-sans antialiased bg-white text-gray-900">
         <Header />
         <div className="flex-1">{children}</div>

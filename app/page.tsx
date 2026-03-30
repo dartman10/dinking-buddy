@@ -13,10 +13,34 @@ function shuffled<T>(arr: T[]): T[] {
 
 export const dynamic = "force-dynamic";
 
+function featuredJsonLd(items: typeof shirts) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Featured Pickleball Shirts",
+    numberOfItems: items.length,
+    itemListElement: items.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: s.title,
+        description: s.description,
+        image: s.image || undefined,
+        url: s.affiliateUrl,
+      },
+    })),
+  };
+}
+
 export default function HomePage() {
   const featured = shuffled(shirts).slice(0, 10);
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(featuredJsonLd(featured)) }}
+      />
       <section className="bg-brand-green text-white py-24 px-4 text-center">
         <h1 className="font-display text-7xl md:text-9xl tracking-wider text-brand-yellow mb-4">
           Dinking Buddy

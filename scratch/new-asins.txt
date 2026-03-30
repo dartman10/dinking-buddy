@@ -1,0 +1,5 @@
+# New ASINs to add to the catalog
+# One ASIN per line. Lines starting with # are comments.
+# Browse Amazon for "pickleball shirt" and paste ASINs here.
+#
+# Example: B0XXXXXXXXX

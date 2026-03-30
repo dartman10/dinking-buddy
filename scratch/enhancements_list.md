@@ -15,3 +15,9 @@ Do all these, in order:
 1. Fetch images for the 194 new products using fetch-images.mjs
 2. Update sitemap dates
 3. Commit and push to deploy
+
+
+Do:
+1. ✅ In the blog, remove mention of total number of shirts because it becomes obsolete after every refresh.
+2. ✅ Update documents.
+3. ✅ Double check everything.
