@@ -1,16 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { Shirt } from "@/lib/shirts";
+import { Product } from "@/lib/shirts";
+import { siteConfig } from "@/lib/config";
 import ProductCard from "@/components/ProductCard";
 
-export default function ShopGrid({ shirts }: { shirts: Shirt[] }) {
+export default function ShopGrid({ products }: { products: Product[] }) {
   const [activeTag, setActiveTag] = useState<string | null>(null);
 
-  const allTags = Array.from(new Set(shirts.flatMap((s) => s.tags))).sort();
+  const allTags = Array.from(new Set(products.flatMap((s) => s.tags))).sort();
   const filtered = activeTag
-    ? shirts.filter((s) => s.tags.includes(activeTag))
-    : shirts;
+    ? products.filter((s) => s.tags.includes(activeTag))
+    : products;
 
   return (
     <>
@@ -42,12 +43,12 @@ export default function ShopGrid({ shirts }: { shirts: Shirt[] }) {
 
       {filtered.length === 0 ? (
         <p className="text-gray-400 text-center py-16">
-          No shirts found for this filter.
+          {siteConfig.shop.emptyFilter}
         </p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((shirt) => (
-            <ProductCard key={shirt.id} shirt={shirt} />
+          {filtered.map((product) => (
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
       )}

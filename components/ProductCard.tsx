@@ -1,14 +1,14 @@
 import Image from "next/image";
-import { Shirt } from "@/lib/shirts";
+import { Product } from "@/lib/shirts";
 
-export default function ProductCard({ shirt }: { shirt: Shirt }) {
+export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
       <div className="relative aspect-square bg-gray-50">
-        {shirt.image ? (
+        {product.image ? (
           <Image
-            src={shirt.image}
-            alt={shirt.title}
+            src={product.image}
+            alt={product.title}
             fill
             className="object-contain p-4"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -23,13 +23,13 @@ export default function ProductCard({ shirt }: { shirt: Shirt }) {
       </div>
       <div className="p-4 flex flex-col flex-1">
         <h3 className="font-semibold text-gray-900 text-sm leading-snug mb-2">
-          {shirt.title}
+          {product.title}
         </h3>
         <p className="text-gray-500 text-xs flex-1 mb-4 line-clamp-3">
-          {shirt.description}
+          {product.description}
         </p>
         <a
-          href={shirt.affiliateUrl}
+          href={product.affiliateUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="block text-center bg-brand-yellow text-brand-green font-bold text-sm uppercase tracking-wide py-2 px-4 rounded hover:brightness-105 transition-all"

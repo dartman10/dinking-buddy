@@ -183,7 +183,7 @@ product and the infrastructure for many more.
 
 ### Phase 3 — SEO & Traffic
 - Long-tail keyword pages ("best pickleball gifts for dad", etc.)
-- Structured data / JSON-LD (Product, BreadcrumbList)
+- ✅ Structured data / JSON-LD (WebSite, ItemList, Product schemas)
 - Image optimization (OG images per page)
 - Internal linking strategy between blog posts and products
 - Social sharing meta per product
@@ -297,9 +297,15 @@ product and the infrastructure for many more.
   - best-pickleball-shirts-2026
   - best-pickleball-shirts-valentines-day
 - Updated progress.md and memory files
+- Added JSON-LD structured data to 3 pages:
+  - `layout.tsx` — WebSite schema (site name, URL, description)
+  - `shop/page.tsx` — ItemList + Product schema for all 391 products
+  - `page.tsx` — ItemList + Product schema for 10 featured shirts
+- Committed and pushed to GitHub (commit `5d7994d`)
+- Vercel auto-deployed to https://dinkingbuddy.com
 
 ### Next session priorities
 1. Google Search Console — set up with Google account, replace placeholder ID
-2. Structured data / JSON-LD (Product schema)
-3. OG images for social sharing
-4. Run first automated catalog refresh (`--discover --add-only`)
+2. OG images for social sharing
+3. Run first automated catalog refresh (`--discover --add-only`)
+4. BreadcrumbList structured data for blog posts

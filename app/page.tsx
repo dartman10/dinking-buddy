@@ -1,5 +1,6 @@
 import Link from "next/link";
 import shirts from "@/lib/shirts";
+import { siteConfig } from "@/lib/config";
 import ProductCard from "@/components/ProductCard";
 
 function shuffled<T>(arr: T[]): T[] {
@@ -17,7 +18,7 @@ function featuredJsonLd(items: typeof shirts) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Featured Pickleball Shirts",
+    name: siteConfig.hero.jsonLdName,
     numberOfItems: items.length,
     itemListElement: items.map((s, i) => ({
       "@type": "ListItem",
@@ -43,26 +44,25 @@ export default function HomePage() {
       />
       <section className="bg-brand-green text-white py-24 px-4 text-center">
         <h1 className="font-display text-7xl md:text-9xl tracking-wider text-brand-yellow mb-4">
-          Dinking Buddy
+          {siteConfig.hero.headline}
         </h1>
         <p className="text-lg md:text-xl text-white/80 max-w-xl mx-auto mb-8">
-          Pickleball shirts for players who live for the dink. Find your
-          perfect shirt below.
+          {siteConfig.hero.subtitle}
         </p>
         <Link
           href="/shop"
           className="inline-block bg-brand-yellow text-brand-green font-bold uppercase tracking-widest py-3 px-8 rounded hover:brightness-105 transition-all text-sm"
         >
-          Shop All Shirts
+          {siteConfig.hero.cta}
         </Link>
       </section>
       <section className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="font-display text-5xl tracking-wider text-brand-green mb-8 text-center">
-          Featured Shirts
+          {siteConfig.hero.featuredHeading}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featured.map((shirt) => (
-            <ProductCard key={shirt.id} shirt={shirt} />
+          {featured.map((product) => (
+            <ProductCard key={product.id} product={product} />
           ))}
         </div>
         <div className="text-center mt-10">
@@ -70,7 +70,7 @@ export default function HomePage() {
             href="/shop"
             className="inline-block border-2 border-brand-green text-brand-green font-bold uppercase tracking-widest py-3 px-8 rounded hover:bg-brand-green hover:text-white transition-all text-sm"
           >
-            See All Shirts
+            {siteConfig.hero.browseAllCta}
           </Link>
         </div>
       </section>

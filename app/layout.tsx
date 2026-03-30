@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { siteConfig } from "@/lib/config";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -20,17 +21,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "DinkingBuddy – Pickleball Shirts",
-    template: "%s | DinkingBuddy",
+    default: `${siteConfig.name} – ${siteConfig.tagline}`,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Pickleball-themed shirts for players who love the game. Curated designs, shipped from Amazon.",
-  metadataBase: new URL("https://dinkingbuddy.com"),
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
   verification: {
-    google: "GOOGLE_SEARCH_CONSOLE_ID",
+    google: siteConfig.googleVerificationId,
   },
   openGraph: {
-    siteName: "DinkingBuddy",
+    siteName: siteConfig.name,
     type: "website",
   },
 };
@@ -52,10 +52,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "DinkingBuddy",
-              url: "https://dinkingbuddy.com",
-              description:
-                "Pickleball-themed shirts for players who love the game. Curated designs, shipped from Amazon.",
+              name: siteConfig.name,
+              url: siteConfig.url,
+              description: siteConfig.description,
             }),
           }}
         />

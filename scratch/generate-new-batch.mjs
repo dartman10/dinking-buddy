@@ -9,6 +9,16 @@
  */
 
 import { readFileSync, writeFileSync } from 'fs';
+import { resolve } from 'path';
+
+// Read affiliate tag from config (single source of truth)
+function readAffiliateTag() {
+  const src = readFileSync(resolve("lib/config.ts"), "utf-8");
+  const m = src.match(/affiliateTag:\s*["']([^"']+)["']/);
+  if (!m) throw new Error("Could not find affiliateTag in lib/config.ts");
+  return m[1];
+}
+const AFFILIATE_TAG = readAffiliateTag();
 
 // Known ASIN→title mappings extracted from Amazon search results
 const knownTitles = {
@@ -289,7 +299,7 @@ const entries = allNewAsins.map(asin => {
     description,
     image: "",
     tags,
-    affiliateUrl: `https://www.amazon.com/dp/${asin}?tag=dinkingbuddy-20`,
+    affiliateUrl: `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`,
   };
 });
 

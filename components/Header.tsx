@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteConfig } from "@/lib/config";
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
           href="/"
           className="font-display text-3xl tracking-wider text-brand-yellow hover:opacity-90 transition-opacity"
         >
-          DinkingBuddy
+          {siteConfig.name}
         </Link>
         <nav className="flex gap-6 text-sm font-semibold uppercase tracking-widest">
           <Link

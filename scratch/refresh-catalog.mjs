@@ -36,11 +36,19 @@ import { readFileSync, writeFileSync, existsSync } from "fs";
 import { resolve } from "path";
 
 // ═══════════════════════════════════════════════════════════════════════
-// Config
+// Config — read affiliate tag from lib/config.ts (single source of truth)
 // ═══════════════════════════════════════════════════════════════════════
 const SHIRTS_PATH = resolve("lib/shirts.ts");
+const CONFIG_PATH = resolve("lib/config.ts");
 const NEW_ASINS_PATH = resolve("scratch/new-asins.txt");
-const AFFILIATE_TAG = "dinkingbuddy-20";
+
+function readAffiliateTag() {
+  const src = readFileSync(CONFIG_PATH, "utf-8");
+  const m = src.match(/affiliateTag:\s*["']([^"']+)["']/);
+  if (!m) throw new Error("Could not find affiliateTag in lib/config.ts");
+  return m[1];
+}
+const AFFILIATE_TAG = readAffiliateTag();
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const CHECK_ONLY = process.argv.includes("--check-only");
@@ -630,9 +638,11 @@ function escapeStr(s) {
 function writeCatalog(entries) {
   const lines = [];
 
-  lines.push(`const AFFILIATE_TAG = "dinkingbuddy-20";`);
+lines.push(`import { siteConfig } from "@/lib/config";`);
   lines.push(``);
-  lines.push(`export interface Shirt {`);
+  lines.push(`const AFFILIATE_TAG = siteConfig.affiliateTag;`);
+  lines.push(``);
+  lines.push(`export interface Product {`);
   lines.push(`  id: string;`);
   lines.push(`  asin: string;`);
   lines.push(`  title: string;`);
@@ -645,7 +655,10 @@ function writeCatalog(entries) {
   lines.push(`  affiliateUrl: string;`);
   lines.push(`}`);
   lines.push(``);
-  lines.push(`const shirts: Shirt[] = [`);
+  lines.push(`/** @deprecated Use Product instead */`);
+  lines.push(`export type Shirt = Product;`);
+  lines.push(``);
+  lines.push(`const shirts: Product[] = [`);
 
   for (let i = 0; i < entries.length; i++) {
     const e = entries[i];
@@ -693,7 +706,7 @@ async function main() {
     "╔═══════════════════════════════════════════════════════════╗"
   );
   console.log(
-    "║      DinkingBuddy.com — Weekly Catalog Refresh          ║"
+    "║           Weekly Catalog Refresh                        ║"
   );
   console.log(
     "╚═══════════════════════════════════════════════════════════╝\n"

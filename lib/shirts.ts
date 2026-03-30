@@ -1,6 +1,8 @@
-const AFFILIATE_TAG = "dinkingbuddy-20";
+import { siteConfig } from "@/lib/config";
 
-export interface Shirt {
+const AFFILIATE_TAG = siteConfig.affiliateTag;
+
+export interface Product {
   id: string;
   asin: string;
   title: string;
@@ -10,6 +12,9 @@ export interface Shirt {
   tags: string[];
   affiliateUrl: string;
 }
+
+/** @deprecated Use Product instead */
+export type Shirt = Product;
 
 const shirts: Shirt[] = [
   {

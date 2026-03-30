@@ -1,17 +1,18 @@
 import { Metadata } from "next";
 import shirts from "@/lib/shirts";
+import { siteConfig } from "@/lib/config";
 import ShopGrid from "@/components/ShopGrid";
 
 export const metadata: Metadata = {
-  title: "Shop Pickleball Shirts",
-  description: "Browse our full collection of pickleball-themed shirts. The perfect gift or treat for any player.",
+  title: siteConfig.shop.title,
+  description: siteConfig.shop.description,
 };
 
 function shopJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Pickleball Shirts",
+    name: siteConfig.shop.jsonLdName,
     numberOfItems: shirts.length,
     itemListElement: shirts.map((s, i) => ({
       "@type": "ListItem",
@@ -38,9 +39,9 @@ export default function ShopPage() {
         Shop
       </h1>
       <p className="text-gray-500 mb-10">
-        Pickleball shirts for every player on the court.
+        {siteConfig.shop.subtitle}
       </p>
-      <ShopGrid shirts={shirts} />
+      <ShopGrid products={shirts} />
     </main>
   );
 }

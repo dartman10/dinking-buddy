@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description:
-    "Pickleball tips, gear guides, and everything dinking. The DinkingBuddy blog.",
+  description: siteConfig.blog.description,
 };
 
 interface Post {
@@ -94,7 +94,7 @@ export default function BlogPage() {
         Blog
       </h1>
       <p className="text-center text-gray-600 mb-12">
-        Pickleball tips, gear guides, and everything dinking.
+        {siteConfig.blog.subtitle}
       </p>
       <div className="space-y-10">
         {posts.map((post) => (
