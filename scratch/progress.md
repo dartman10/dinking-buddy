@@ -50,33 +50,36 @@ storefront that requires zero inventory, payment processing, or shipping logic.
 
 ```
 app/
-  layout.tsx          Root layout (metadata, fonts, Header/Footer wrapper)
-  page.tsx            Homepage — hero banner + featured shirts grid
+  layout.tsx          Root layout (metadata, fonts, Header/Footer, Vercel Analytics)
+  page.tsx            Homepage — hero banner + 10 randomized featured shirts
   not-found.tsx       Custom 404 (pickleball-themed)
   globals.css         CSS variables, Tailwind theme
   robots.ts           /robots.txt (allow all, sitemap link)
-  sitemap.ts          /sitemap.xml (/, /shop, /about)
+  sitemap.ts          /sitemap.xml (/, /shop, /about, /blog — dynamic dates)
   shop/page.tsx       Shop page — ShopGrid with tag filtering
   about/page.tsx      About + FTC affiliate disclosure
+  blog/page.tsx       Blog index — lists all 10 posts (newest first)
+  blog/*/layout.tsx   Per-post layout with metadata
+  blog/*/page.mdx     Blog post content (MDX)
 
 components/
-  Header.tsx          Sticky nav — logo + Shop / About links
+  Header.tsx          Sticky nav — logo + Shop / Blog / About links
   Footer.tsx          Copyright (dynamic year) + Amazon Associates disclaimer
-  ProductCard.tsx     Shirt card — image (or SVG placeholder), title, desc, Amazon CTA
+  ProductCard.tsx     Shirt card — image, title, desc, Amazon CTA
   ShopGrid.tsx        Client component — tag filter buttons + product grid
 
 lib/
   shirts.ts           Product catalog array (197 products), Shirt interface, AFFILIATE_TAG constant
 
+mdx-components.tsx    MDX component overrides (styled headings, links, lists, blockquotes)
+
 scratch/
   progress.md         This file
+  enhancements_list.md Enhancement tracker
   asin_list.md        Original ASIN list
   asin_list_100.md    Extended ASIN list (100 entries)
   generate-shirts.mjs Script to generate shirt catalog entries from ASINs
   fetch-images.mjs    Script to fetch product images from Amazon (curl + cookie jar)
-  fetch-images.log    Pass 1 log (100/176 fetched)
-  fetch-images-pass2.log Pass 2 log (76/76 fetched, human-like mode)
-  test-fetch.mjs      Debug script for testing Amazon fetch strategies
 ```
 
 ### Data Flow
@@ -84,7 +87,9 @@ scratch/
 2. Server pages (`/`, `/shop`) import the array and pass it to components.
 3. `ShopGrid` ("use client") enables interactive tag filtering on `/shop`.
 4. `ProductCard` renders each shirt and links out to Amazon with the affiliate tag.
-5. No database, no API routes, no server actions — fully static / SSG-friendly.
+5. Homepage uses `force-dynamic` to randomize 10 featured shirts per page load.
+6. Blog posts are MDX files with per-post layouts for metadata.
+7. No database, no API routes, no server actions.
 
 ---
 
@@ -112,8 +117,12 @@ product and the infrastructure for many more.
 | 13 | Expand catalog to 25+ products            | ✅ Done (197 products) |
 | 14 | Deploy to Vercel                          | ✅ Done |
 | 15 | Connect DinkingBuddy.com domain           | ✅ Done |
-| 16 | Update sitemap dates (stuck on 2025-01-01)| ❌ TODO |
+| 16 | Update sitemap dates (stuck on 2025-01-01)| ✅ Done |
 | 17 | Fetch images for all 197 products         | ✅ Done |
+| 18 | Homepage: limit to 10 randomized products | ✅ Done |
+| 19 | Blog with MDX (10 posts)                  | ✅ Done |
+| 20 | Vercel Analytics                          | ✅ Done |
+| 21 | Google Search Console verification tag    | ⏳ Placeholder (needs user's Google account) |
 
 ### Product Catalog Status (197 products)
 
@@ -161,9 +170,10 @@ product and the infrastructure for many more.
 - ✅ Linked real ASINs for all products
 - ✅ Expanded catalog to 197 products (exceeds 25–50 target)
 - ✅ Fetched real product images for all 197 products
+- ✅ Blog with MDX — 10 posts, backdated monthly Jun 2025 – Mar 2026
+- ✅ Vercel Analytics integrated
+- ⏳ Google Search Console — placeholder tag in layout, needs user setup
 - Add category pages (funny, gift, women's, men's, kids)
-- Blog with MDX (pickleball tips, gift guides, "best shirts for…" posts)
-- Google Search Console setup + analytics (Vercel Analytics or Plausible)
 
 ### Phase 3 — SEO & Traffic
 - Long-tail keyword pages ("best pickleball gifts for dad", etc.)
@@ -226,9 +236,33 @@ product and the infrastructure for many more.
 - Deployed to Vercel via GitHub import
 - Connected DinkingBuddy.com domain (Namecheap DNS → Vercel)
 - Site live at https://dinkingbuddy.com
+- Fixed sitemap dates — now uses `new Date()` (dynamic, always current), added `/blog`
+- Homepage limited to 10 featured products, randomized per page load (Fisher-Yates shuffle, `force-dynamic`)
+- Added Blog link to Header nav
+- Installed `@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`; configured `next.config.ts` with `pageExtensions`
+- Created `mdx-components.tsx` with styled MDX components (headings, links, lists, blockquotes)
+- Created 3 blog posts: best shirts 2026, gift guide, what to wear
+- Installed `@vercel/analytics`; added `<Analytics />` to root layout
+- Added Google Search Console `verification.google` placeholder in metadata
+- Pushed to GitHub (commit `aa0821e`)
+- Expanded blog to 10 posts, backdated monthly from June 2025 to March 2026:
+  - Jun 2025: What to Wear to Play Pickleball
+  - Jul 2025: Pickleball Rules for Beginners
+  - Aug 2025: 5 Drills to Improve Your Dink Game
+  - Sep 2025: The Ultimate Pickleball Gift Guide
+  - Oct 2025: Indoor vs Outdoor Pickleball
+  - Nov 2025: How to Choose Your First Pickleball Paddle
+  - Dec 2025: Pickleball Etiquette: 10 Unwritten Rules
+  - Jan 2026: Pickleball in 2026: Why It's Still Growing
+  - Feb 2026: Best Pickleball Shirts for Valentine's Day
+  - Mar 2026: The 10 Best Pickleball Shirts in 2026
+- Every blog post links back to `/shop` for affiliate traffic
+- Pushed to GitHub (commit `29b72ca`)
+- Cleaned up workspace: removed unused Next.js boilerplate SVGs, debug scripts, log files
 
 ### Next session priorities
-1. Update sitemap `lastModified` dates (still hardcoded to 2025-01-01)
-2. Add category pages (funny, gift, women's, men's)
-3. Blog with MDX (pickleball tips, gift guides)
-4. Google Search Console setup + analytics
+1. Google Search Console — set up with Google account, replace placeholder ID
+2. Structured data / JSON-LD (Product schema)
+3. Cross-linking between blog posts
+4. More blog posts for long-tail SEO
+5. OG images for social sharing
