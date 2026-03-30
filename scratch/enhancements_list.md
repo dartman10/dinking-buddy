@@ -10,3 +10,8 @@ Also, these two:
 
 I'm staying out so skip asking permissions, just keep on going until its done.
 
+
+Do all these, in order:
+1. Fetch images for the 194 new products using fetch-images.mjs
+2. Update sitemap dates
+3. Commit and push to deploy

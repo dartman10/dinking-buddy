@@ -25,14 +25,14 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-// Random delay like a person scrolling/clicking — 4-9s between pages
+// Random delay like a person scrolling/clicking — 3-5s between pages
 function humanDelay() {
-  return sleep(rand(4000, 9000));
+  return sleep(rand(3000, 5000));
 }
 
-// Longer pause like someone got distracted — 15-30s
+// Longer pause like someone got distracted — 8-15s
 function longPause() {
-  return sleep(rand(15000, 30000));
+  return sleep(rand(8000, 15000));
 }
 
 // ── Browser simulation ──────────────────────────────────────────────
@@ -161,17 +161,17 @@ async function main() {
       failed++;
 
       if (captchaStreak >= 3) {
-        // Back off like a person who hit a wall — wait 1-2 minutes
-        const backoff = rand(60000, 120000);
+        // Back off like a person who hit a wall — wait 45-90s
+        const backoff = rand(45000, 90000);
         console.log(`  💤 Backing off ${Math.round(backoff / 1000)}s...`);
         await sleep(backoff);
         // Re-warm the session with fresh cookies
         if (existsSync(COOKIE_JAR)) unlinkSync(COOKIE_JAR);
         warmUpSession();
-        await sleep(rand(3000, 6000));
+        await sleep(rand(8000, 15000));
         captchaStreak = 0;
       } else {
-        await sleep(rand(10000, 20000));
+        await sleep(rand(5000, 10000));
       }
     } else if (imageUrl) {
       captchaStreak = 0;
@@ -211,7 +211,7 @@ async function main() {
     if (i < shirts.length - 1) {
       // Every ~10 items, take a longer break like a person would
       if ((i + 1) % rand(8, 12) === 0) {
-        const pause = rand(20000, 45000);
+        const pause = rand(15000, 30000);
         console.log(`  ☕ Taking a break... ${Math.round(pause / 1000)}s`);
         await sleep(pause);
       } else {
