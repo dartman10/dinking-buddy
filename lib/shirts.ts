@@ -16,7 +16,7 @@ export interface Product {
 /** @deprecated Use Product instead */
 export type Shirt = Product;
 
-const shirts: Shirt[] = [
+const shirts: Product[] = [
   {
     id: "1",
     asin: "B0GTVMH4KW",
@@ -254,7 +254,7 @@ const shirts: Shirt[] = [
     title: "Funny Pickleball Shirt – Women's Ball Got It 2025 Tee",
     description:
       "A 2025 novelty retirement-ready pickleball shirt with a fun 'Ball Got It' graphic. Great conversation starter on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71RpkhvYFlL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F12ML71L?tag=${AFFILIATE_TAG}`,
@@ -265,7 +265,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts Women – Player Team Tshirts",
     description:
       "Rep your pickleball squad with this women's team-style graphic tee. Comfortable short sleeve fit, perfect for casual matches and practice sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Ulu092iBL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FP33JSB2?tag=${AFFILIATE_TAG}`,
@@ -276,7 +276,7 @@ const shirts: Shirt[] = [
     title: "Women's Oversized Pickleball Team Graphic T-Shirt",
     description:
       "An oversized, relaxed-fit pickleball graphic tee for women who like their shirts comfortable and their dinks precise. Baseball-fan style design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61vKP1JlhKL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F1FSNM8V?tag=${AFFILIATE_TAG}`,
@@ -287,7 +287,7 @@ const shirts: Shirt[] = [
     title: "I Can't, I Have Pickleball – Women's Tee",
     description:
       "The perfect excuse for every invitation. This 'I Can't, I Have Pickleball' shirt lets everyone know where your priorities are.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81OnZXivoxL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0D62Q5HYD?tag=${AFFILIATE_TAG}`,
@@ -298,7 +298,7 @@ const shirts: Shirt[] = [
     title: "It's A Good Day to Play Pickleball – Women's Colorful Tee",
     description:
       "Brighten up your wardrobe with this colorful pickleball graphic tee. Every day is a good day to play when you're wearing this cheerful shirt.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81gjMjM1ZlL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CWLF42FW?tag=${AFFILIATE_TAG}`,
@@ -309,7 +309,7 @@ const shirts: Shirt[] = [
     title: "Women's It's a Good Day to Play Pickleball Tank Top",
     description:
       "Stay cool on the court with this women's racerback tank top. A cute pickleball lover vest shirt perfect for summer casual sport.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71216l4K9HL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5QYPPNM?tag=${AFFILIATE_TAG}`,
@@ -320,7 +320,7 @@ const shirts: Shirt[] = [
     title: "TUPOSU Pickleball Shirt for Women – Player Lover Tee",
     description:
       "A dedicated pickleball player shirt from TUPOSU with a fun graphic design. Makes a great gift for any woman who loves the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71WT87ACm0L._AC_SX385_.jpg",
     tags: ["women's", "graphic", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZCLZKK8?tag=${AFFILIATE_TAG}`,
@@ -331,7 +331,7 @@ const shirts: Shirt[] = [
     title: "It's A Good Day – Women's V-Neck Pickleball Tee",
     description:
       "A relaxed V-neck tee with a fun pickleball graphic. Casual enough for everyday wear, sporty enough for post-game hangouts.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71EXh-WCIlL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GH7Q7H2H?tag=${AFFILIATE_TAG}`,
@@ -342,7 +342,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Oversized Graphic T-Shirt – Baseball Fan Style",
     description:
       "A trendy oversized graphic tee that combines pickleball love with baseball-style flair. Short sleeve, relaxed fit, and full of personality.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61lwSWVS6FL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSDN1BGX?tag=${AFFILIATE_TAG}`,
@@ -353,7 +353,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic T-Shirt – Player Gift",
     description:
       "A versatile women's pickleball graphic tee that works as a thoughtful gift or a treat for yourself. Short sleeve, comfortable fit.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gXwPtIOwL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0BWXJ1NVP?tag=${AFFILIATE_TAG}`,
@@ -364,7 +364,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top – Got It Oops Yours Sleeveless",
     description:
       "The classic pickleball call-out on a sleeveless summer tank. 'Got It... Oops, Yours!' — every player knows this moment.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71-8Lerm8JL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GC63R8NJ?tag=${AFFILIATE_TAG}`,
@@ -375,7 +375,7 @@ const shirts: Shirt[] = [
     title: "Peace Love Pickleball – Women's Sport T-Shirt",
     description:
       "Peace, love, and pickleball — the three essentials. A fun graphic tee for women who believe in living the good life, one dink at a time.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71g9IU0fMuL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GJSQ8MNR?tag=${AFFILIATE_TAG}`,
@@ -386,7 +386,7 @@ const shirts: Shirt[] = [
     title: "Was That Out? – Women's Letter Print Pickleball Shirt",
     description:
       "The most debated question in pickleball history, now on a shirt. A playful letter-print graphic tee that every player can relate to.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71HtZpb0rEL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C624RM1W?tag=${AFFILIATE_TAG}`,
@@ -397,7 +397,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Heart V-Neck Graphic Tee – Women's",
     description:
       "Wear your heart on your sleeve — and your love for pickleball on your chest. A cute heart-themed V-neck graphic tee for women.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61nIqTMtH1L._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DXKHHRJJ?tag=${AFFILIATE_TAG}`,
@@ -408,7 +408,7 @@ const shirts: Shirt[] = [
     title: "Cutesong Pickleball Player T-Shirt – Funny Sports Lover",
     description:
       "A funny and cute pickleball player tee from Cutesong. Short sleeve, lightweight, and perfect for showing off your love of the sport.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Gb+sz6FzL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GJBHMN1G?tag=${AFFILIATE_TAG}`,
@@ -419,7 +419,7 @@ const shirts: Shirt[] = [
     title: "I Can't, I Have Pickleball – Women's Paddleball Lover",
     description:
       "Another excuse to skip everything else — because pickleball comes first. A fun paddleball lover tee for women with priorities.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71q+GRUd4ML._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ6JLR1L?tag=${AFFILIATE_TAG}`,
@@ -430,7 +430,7 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank Tops – Women's Graphic Summer",
     description:
       "A fun graphic pickleball tank top from LHBNK. Perfect for hot summer matches, gym sessions, or just showing off your pickleball obsession.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81sC5ix1grL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F186TZZY?tag=${AFFILIATE_TAG}`,
@@ -441,7 +441,7 @@ const shirts: Shirt[] = [
     title: "LuxLass Pickleball Shirt – Front & Back Print Women's",
     description:
       "Stand out with front and back pickleball graphic prints from LuxLass. A paddleball-themed tee that says you're serious about the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/716z+J8hZUL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0FCYSKQ66?tag=${AFFILIATE_TAG}`,
@@ -452,7 +452,7 @@ const shirts: Shirt[] = [
     title: "Stay Out of The Kitchen – Women's Printed Tee",
     description:
       "The golden rule of pickleball on a graphic tee. Stay out of the kitchen and look great doing it with this women's printed shirt.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71rrWPizpFL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YQLQTD?tag=${AFFILIATE_TAG}`,
@@ -463,7 +463,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Mom – It's a Good Day Tee",
     description:
       "For the mom who never misses a game. A dedicated pickleball mom tee that celebrates the sport and the player who balances it all.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81R-DRK6XjL._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4M1B6SY?tag=${AFFILIATE_TAG}`,
@@ -474,7 +474,7 @@ const shirts: Shirt[] = [
     title: "COLORFUL BLING Women's Pickleball T-Shirt – Crew Neck",
     description:
       "A stylish crew neck pickleball tee from COLORFUL BLING. Stretchable cotton blend with a regular fit that's comfortable on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91ZGoUniGEL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CM5QH7T9?tag=${AFFILIATE_TAG}`,
@@ -485,7 +485,7 @@ const shirts: Shirt[] = [
     title: "Women's Athletic V-Neck Pickleball Tee",
     description:
       "An athletic V-neck pickleball tee designed for active play. Lightweight, breathable, and ready for competitive or casual matches.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81mEJFFpCnL._AC_SX385_.jpg",
     tags: ["women's", "performance", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CJTRSFNP?tag=${AFFILIATE_TAG}`,
@@ -496,7 +496,7 @@ const shirts: Shirt[] = [
     title: "Women's Funny Polo Shirt – Pickleball Golf Tennis Print",
     description:
       "A fun printed polo shirt that bridges pickleball, golf, and tennis. Collared design makes it court-ready and country-club approved.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71o5WHSWSjL._AC_SX385_.jpg",
     tags: ["women's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0GKZSK88L?tag=${AFFILIATE_TAG}`,
@@ -507,7 +507,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Lover Vest – Women's Sleeveless Tank",
     description:
       "A sleeveless pickleball vest shirt for summer sport. Casual, comfortable, and perfect for showing off your toned pickleball arms.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71216l4K9HL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5QZG9TZ?tag=${AFFILIATE_TAG}`,
@@ -518,7 +518,7 @@ const shirts: Shirt[] = [
     title: "ZIRWTI Play Pickleball Racerback Tank – Women's",
     description:
       "A racerback graphic tank from ZIRWTI with a fun 'Play Pickleball' design. Athletic gym clothes meet pickleball style.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71pQyyb0VhL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GCDJWRW7?tag=${AFFILIATE_TAG}`,
@@ -529,7 +529,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt – Vintage Sports Lover Graphic Tee",
     description:
       "A vintage-inspired pickleball graphic tee for the sports lover. The retro design adds character to this everyday-wearable shirt.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61GIQyL0TWL._AC_QL10_SX980_SY55_FMwebp_.jpg",
     tags: ["women's", "graphic", "vintage"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4CFHWLB?tag=${AFFILIATE_TAG}`,
@@ -540,7 +540,7 @@ const shirts: Shirt[] = [
     title: "Got It Oops Yours – Pickleball V-Neck Funny Tee",
     description:
       "The universal pickleball callout on a women's V-neck tee. A funny gift for pickleball lovers who've lived this moment a thousand times.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61eNrqFuVXL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D1Y89663?tag=${AFFILIATE_TAG}`,
@@ -551,7 +551,7 @@ const shirts: Shirt[] = [
     title: "IFQ Heartbeat Pickleball Lover T-Shirt – Women's",
     description:
       "Show the world your heartbeat runs on pickleball with this graphic tee from IFQ. A fun sport lover shirt with a pulse-line design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71DOPz5GhZL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GHYMTJJP?tag=${AFFILIATE_TAG}`,
@@ -562,7 +562,7 @@ const shirts: Shirt[] = [
     title: "LAZYCHILD Pickleball Heartbeat Graphic T-Shirt",
     description:
       "A heartbeat-themed pickleball tee from LAZYCHILD. The EKG-style graphic shows your vital signs are all pickleball, all the time.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81L5fWjdBwL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0DDL2WYN7?tag=${AFFILIATE_TAG}`,
@@ -573,7 +573,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Because Murder is Wrong – Funny Women's Tee",
     description:
       "The ultimate stress-relief sport, now with a hilarious tagline. A darkly funny pickleball tee for women with a great sense of humor.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81BxJC2m4wL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0FPTPNKTB?tag=${AFFILIATE_TAG}`,
@@ -584,7 +584,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Short Sleeve Shirt – Women's Casual",
     description:
       "A simple, comfortable short sleeve pickleball shirt for everyday wear. Clean design, relaxed fit, and perfect for casual outings.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71hRYfhSW-L._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DY7WVBR3?tag=${AFFILIATE_TAG}`,
@@ -595,7 +595,7 @@ const shirts: Shirt[] = [
     title: "LIWYLU Pickleball Tank Top – Women's Player Gift",
     description:
       "A pickleball player gift tank from LIWYLU. Casual sports tee with sleeveless design, perfect for warm-weather play.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71k9rMH0wIL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5PVFHPL?tag=${AFFILIATE_TAG}`,
@@ -606,7 +606,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts – 2025 Novelty Retirement Sport Graphic",
     description:
       "A novelty retirement sport graphic tee for the 2025 pickleball obsessive. Because your new full-time job is playing pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61GIQyL0TWL._AC_QL10_SX980_SY55_FMwebp_.jpg",
     tags: ["women's", "funny", "retirement"],
     affiliateUrl: `https://www.amazon.com/dp/B0F1F1JHN9?tag=${AFFILIATE_TAG}`,
@@ -617,7 +617,7 @@ const shirts: Shirt[] = [
     title: "WESEOOU V-Neck Pickleball Tees – Women's Casual",
     description:
       "A relaxed V-neck pickleball tee from WESEOOU. Casual letter-print design that's perfect for the women who live for the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/717XfOfMGJL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GH7H4L6Y?tag=${AFFILIATE_TAG}`,
@@ -628,7 +628,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Graphic Workout Pickleball Top",
     description:
       "A sleeveless graphic workout top for the active pickleball player. Designed for movement and breathability during intense matches.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61i8d9S0QpL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0F8NVKZ1C?tag=${AFFILIATE_TAG}`,
@@ -639,7 +639,7 @@ const shirts: Shirt[] = [
     title: "Was That Out? – Women's Pickleball T-Shirt",
     description:
       "The eternal pickleball debate on yet another must-have tee. Because the ball was definitely out... or was it?",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81UN7dsHXJL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C1N6CRN5?tag=${AFFILIATE_TAG}`,
@@ -650,7 +650,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Button Down Dress Shirt",
     description:
       "Dress it up with this ChalkTalkSPORTS pickleball button-down. A polished look for the player who takes both their game and style seriously.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81MEG3oWVDL._AC_SX385_.jpg",
     tags: ["men's", "premium", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0F48SX6GV?tag=${AFFILIATE_TAG}`,
@@ -661,7 +661,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Performance Polo – Adult",
     description:
       "A premium performance polo from ChalkTalkSPORTS designed for the serious pickleball player. Moisture-wicking fabric keeps you cool under pressure.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71H5Q2JT9GL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQLB45K?tag=${AFFILIATE_TAG}`,
@@ -672,7 +672,7 @@ const shirts: Shirt[] = [
     title: "Men's Pinhole Stitching Performance Pickleball Shirt",
     description:
       "Technical pinhole stitching construction for maximum airflow during competitive play. A performance shirt built for athletes who don't slow down.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61-OBkMcgaL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DY4HHTJY?tag=${AFFILIATE_TAG}`,
@@ -683,7 +683,7 @@ const shirts: Shirt[] = [
     title: "Men's Performance Short Sleeve Pickleball Tee – UV",
     description:
       "UV-protective short sleeve performance tee for outdoor pickleball. Moisture-wicking technology keeps you dry through every rally.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51m0LggrPLL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0DLGTZYVL?tag=${AFFILIATE_TAG}`,
@@ -694,7 +694,7 @@ const shirts: Shirt[] = [
     title: "Franklin Sports Men's Performance Pickleball Shirt",
     description:
       "From the trusted name in sports equipment, Franklin Sports delivers a performance pickleball shirt built for competitive play and lasting comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71jX7wF9wQL._AC_SX385_.jpg",
     tags: ["men's", "performance", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQF3H31G?tag=${AFFILIATE_TAG}`,
@@ -705,7 +705,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Turtle Neck Pickleball Performance Shirt",
     description:
       "A unique turtle neck performance design from Fjalljós with UPF 50+ sun protection. Stand out on the court with style and function.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/712pjAtQ26L._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0F887KYYF?tag=${AFFILIATE_TAG}`,
@@ -716,7 +716,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós UPF 50+ Pickleball Performance Tee – Quick Dry",
     description:
       "Quick-dry UPF 50+ performance tee from Fjalljós. Purpose-built for outdoor pickleball with moisture-wicking fabric and athletic cut.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71rChkwEgSL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTMZ8YNP?tag=${AFFILIATE_TAG}`,
@@ -727,7 +727,7 @@ const shirts: Shirt[] = [
     title: "Franklin Sports Performance Pickleball Shirt – White",
     description:
       "A clean white performance polo from Franklin Sports. Classic courtside style with modern moisture-wicking technology.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/618XFFXIHqL._AC_SX385_.jpg",
     tags: ["men's", "performance", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQF368RC?tag=${AFFILIATE_TAG}`,
@@ -738,7 +738,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Performance Pickleball Tee – Short Sleeve",
     description:
       "Another standout from Fjalljós, this short sleeve performance tee combines athletic cut with technical fabric for serious court time.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71yaf-TPweL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTMWGWH7?tag=${AFFILIATE_TAG}`,
@@ -749,7 +749,7 @@ const shirts: Shirt[] = [
     title: "Men's Performance Pickleball Raglan Tee",
     description:
       "A raglan-cut performance tee designed for full range of motion on the pickleball court. Athletic fit with breathable construction.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81oELbdlg1L._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0CKM47TZS?tag=${AFFILIATE_TAG}`,
@@ -760,7 +760,7 @@ const shirts: Shirt[] = [
     title: "Cozople Athletic Pickleball Performance Shirt",
     description:
       "Cozople's athletic pickleball shirt combines performance fabric with a comfortable fit. Designed for players who demand both style and function.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71m64IU7qkL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0GD6WDDGD?tag=${AFFILIATE_TAG}`,
@@ -771,7 +771,7 @@ const shirts: Shirt[] = [
     title: "Men's Pinhole Performance Pickleball Tee – Variant",
     description:
       "Technical performance tee with pinhole ventilation for enhanced airflow. Stay cool during the most competitive matches.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61XicHmMRtL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DY7X93P3?tag=${AFFILIATE_TAG}`,
@@ -782,7 +782,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Unique Print Pickleball Shirt – Performance",
     description:
       "A unique graphic print performance pickleball shirt from Fjalljós. Quick-dry fabric meets eye-catching design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/711mDtnyU5L._AC_SX385_.jpg",
     tags: ["men's", "performance", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F888VVDJ?tag=${AFFILIATE_TAG}`,
@@ -793,7 +793,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Polo – Men's Performance",
     description:
       "Step onto the court in style with the AYUNIX pickleball polo. Moisture-wicking performance fabric with a sharp collared design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZXoRItARL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DG2N63ZP?tag=${AFFILIATE_TAG}`,
@@ -804,7 +804,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Polo Shirt – Men's Sport",
     description:
       "A sport-ready polo from AYUNIX designed for the competitive pickleball player. Keeps you dry and looking sharp all match long.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZXoRItARL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DG2N6FZG?tag=${AFFILIATE_TAG}`,
@@ -815,7 +815,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Performance Polo – Sport",
     description:
       "A sport-focused performance polo from ChalkTalkSPORTS. Premium moisture management for the player who takes every point seriously.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Ho90f6ITL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQM3PV6?tag=${AFFILIATE_TAG}`,
@@ -826,7 +826,7 @@ const shirts: Shirt[] = [
     title: "Men's Seamless Pickleball Performance Shirt",
     description:
       "Seamless construction eliminates chafing during intense play. A next-level performance shirt for dedicated pickleball athletes.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71OrVtL4+iL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ6Q4HYT?tag=${AFFILIATE_TAG}`,
@@ -837,7 +837,7 @@ const shirts: Shirt[] = [
     title: "Men's Long Sleeve Pickleball Athletic Shirt",
     description:
       "Extra coverage for early morning or late afternoon court sessions. A long sleeve athletic pickleball shirt with performance fabric.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81jDIrLnXAL._AC_SX385_.jpg",
     tags: ["men's", "performance", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0CNM6QPD3?tag=${AFFILIATE_TAG}`,
@@ -848,7 +848,7 @@ const shirts: Shirt[] = [
     title: "Life is Good – Keep It Simple Pickleball Tee (Dark)",
     description:
       "The iconic Life is Good Crusher Tee in a darker colorway. USA-grown cotton, simple pickleball graphic, maximum comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71aGBUFrnLL._AC_SX385_.jpg",
     tags: ["men's", "premium", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C4X1JNDG?tag=${AFFILIATE_TAG}`,
@@ -859,7 +859,7 @@ const shirts: Shirt[] = [
     title: "Men's Moisture Wicking Pickleball Performance Shirt",
     description:
       "Engineered for athletes, this moisture-wicking performance shirt keeps you dry and comfortable through marathon pickleball sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81JoxhAt8eL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQ3ZWYBH?tag=${AFFILIATE_TAG}`,
@@ -870,7 +870,7 @@ const shirts: Shirt[] = [
     title: "Men's Orion Performance Pickleball Shirt",
     description:
       "The Orion performance pickleball shirt delivers technical fabric and athletic cut for competitive players who demand the best.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/31IvAi9NhdL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYJZKKHZ?tag=${AFFILIATE_TAG}`,
@@ -881,7 +881,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Performance Polo – Golf Outfits",
     description:
       "Dress for the club and the court with this versatile AYUNIX polo. Pickleball graphics meet golf-course style.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81o-R95+yzL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0D7W36R6J?tag=${AFFILIATE_TAG}`,
@@ -892,7 +892,7 @@ const shirts: Shirt[] = [
     title: "Court & Coast Short Sleeve Pickleball Shirt",
     description:
       "From court to coast, this versatile short sleeve shirt transitions seamlessly between active play and casual hangouts.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71mozk0+GHL._AC_SX385_.jpg",
     tags: ["men's", "performance", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FGKRYRJ2?tag=${AFFILIATE_TAG}`,
@@ -903,7 +903,7 @@ const shirts: Shirt[] = [
     title: "Qskall American Flag Pickleball T-Shirt – 4th of July",
     description:
       "Combine patriotism and pickleball with this American flag graphic tee from Qskall. Perfect for 4th of July tournaments and holiday cookouts.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/719BzbYlxBL._AC_SX385_.jpg",
     tags: ["men's", "patriotic", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F6CRV83X?tag=${AFFILIATE_TAG}`,
@@ -914,7 +914,7 @@ const shirts: Shirt[] = [
     title: "Franklin Sports Ultimate Polo – Pickleball Edition",
     description:
       "Franklin Sports' ultimate polo shirt in a pickleball edition. Premium feel, athletic performance, and a brand you trust.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71nyoDb27TL._AC_SX385_.jpg",
     tags: ["men's", "polo", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQF2CX98?tag=${AFFILIATE_TAG}`,
@@ -925,7 +925,7 @@ const shirts: Shirt[] = [
     title: "TIEEI Pickleball Shirts – Men's Paddleball Themed Tee",
     description:
       "A paddleball-themed graphic tee from TIEEI for the men's pickleball enthusiast. Casual fit with a fun player-themed design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71N0NYj0oWL._AC_SX385_.jpg",
     tags: ["men's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZW1D81T?tag=${AFFILIATE_TAG}`,
@@ -936,7 +936,7 @@ const shirts: Shirt[] = [
     title: "Ann Arbor Retirement Plan: Pickleball – Funny Shirt",
     description:
       "From Ann Arbor T-shirt Co., the ultimate retirement plan shirt. Because the only thing better than retiring is retiring to play pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81+SgKzdGoL._AC_SX385_.jpg",
     tags: ["men's", "funny", "retirement"],
     affiliateUrl: `https://www.amazon.com/dp/B0BKG1PMZL?tag=${AFFILIATE_TAG}`,
@@ -947,7 +947,7 @@ const shirts: Shirt[] = [
     title: "Men's Funny Long Sleeve Polo – Pickleball Edition",
     description:
       "A long sleeve polo with pickleball humor built in. Perfect for those cooler court days when you still want to make your opponents laugh.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81FY2tVWZ9L._AC_SX385_.jpg",
     tags: ["men's", "polo", "funny", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTWJ25PN?tag=${AFFILIATE_TAG}`,
@@ -958,7 +958,7 @@ const shirts: Shirt[] = [
     title: "The Dinkfather – Funny Pickleball T-Shirt for Men",
     description:
       "An offer your fellow players can't refuse. The Dinkfather parody tee is the ultimate power move for any pickleball godfather.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71e7haLmjlL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0BJWCJLMK?tag=${AFFILIATE_TAG}`,
@@ -969,7 +969,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Polo – Pickles Print",
     description:
       "A fun pickles-print polo for the man who doesn't take himself too seriously. Stylish enough for the court, funny enough for the after-party.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91uirGC-ZSL._AC_SX385_.jpg",
     tags: ["men's", "polo", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ2698Z2?tag=${AFFILIATE_TAG}`,
@@ -980,7 +980,7 @@ const shirts: Shirt[] = [
     title: "Men's Quarter Zip Pickleball Performance Shirt",
     description:
       "A sleek quarter-zip performance shirt for the player who wants versatility. Zip up for warmup, unzip for intense rallies.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71AfnGWjifL._AC_SX385_.jpg",
     tags: ["men's", "performance", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0DGV912RB?tag=${AFFILIATE_TAG}`,
@@ -991,7 +991,7 @@ const shirts: Shirt[] = [
     title: "Margaritaville Fins Up Pickleball Shirt",
     description:
       "It's 5 o'clock somewhere, and pickleball is always on the schedule. The Margaritaville Fins Up pickleball shirt brings island vibes to the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71qaAGe5wTL._AC_SX385_.jpg",
     tags: ["men's", "casual", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0CF3X3QN9?tag=${AFFILIATE_TAG}`,
@@ -1002,7 +1002,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Short Sleeve Button Down",
     description:
       "A versatile short sleeve pickleball button-down from ChalkTalkSPORTS. Casual enough for the weekend, sharp enough for a pickleball social.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71X-m2kGJrL._AC_SX385_.jpg",
     tags: ["unisex", "premium", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C3FG2L7X?tag=${AFFILIATE_TAG}`,
@@ -1013,7 +1013,7 @@ const shirts: Shirt[] = [
     title: "TeeUnion Funny Pickleball T-Shirt – Hilarious Graphic",
     description:
       "Another hilarious sports graphic from TeeUnion that'll have the whole court cracking up. Because pickleball is serious business told with humor.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81xrjjtkaBL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DVBFTJXD?tag=${AFFILIATE_TAG}`,
@@ -1024,7 +1024,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Sport Polo – Performance",
     description:
       "ChalkTalkSPORTS performance sport polo built for competitive pickleball. Youth and adult sizes available for the whole family.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Ho90f6ITL._AC_SX385_.jpg",
     tags: ["unisex", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQLB4F5?tag=${AFFILIATE_TAG}`,
@@ -1035,7 +1035,7 @@ const shirts: Shirt[] = [
     title: "Women It's a Good Day to Play – Pickleball Tank",
     description:
       "Spread positivity on the pickleball court with this 'Good Day to Play' tank. Casual, comfortable, and full of good vibes.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71216l4K9HL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5QZNQG8?tag=${AFFILIATE_TAG}`,
@@ -1046,7 +1046,7 @@ const shirts: Shirt[] = [
     title: "TeeUnion Funny Pickleball Graphic – Sports Humor Tee",
     description:
       "TeeUnion strikes again with another funny pickleball graphic tee. For the player who wins every match — at least when it comes to humor.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81pJJb48CJL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DVBTKNGX?tag=${AFFILIATE_TAG}`,
@@ -1057,7 +1057,7 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank Tops – Women's Summer Graphic",
     description:
       "A graphic pickleball tank from LHBNK that's perfect for summer. Sleeveless design keeps you cool when the game heats up.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81AYkU5ChCL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F189JB18?tag=${AFFILIATE_TAG}`,
@@ -1068,7 +1068,7 @@ const shirts: Shirt[] = [
     title: "Got It Oops Yours – Pickleball V-Neck Gift Tee",
     description:
       "The pickleball callout that never gets old, on a comfortable V-neck tee. A perfect gag gift for any pickleball player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61eNrqFuVXL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D1Y5KSNB?tag=${AFFILIATE_TAG}`,
@@ -1079,7 +1079,7 @@ const shirts: Shirt[] = [
     title: "TUPOSU Pickleball Player Shirt – Funny Graphic",
     description:
       "A funny pickleball player graphic shirt from TUPOSU. Bold design for the player who loves making a statement on the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+DWALt-7L._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZCM6Y2N?tag=${AFFILIATE_TAG}`,
@@ -1090,7 +1090,7 @@ const shirts: Shirt[] = [
     title: "I'm Missing Pickleball Right Now – Funny T-Shirt",
     description:
       "Worn when you're anywhere that isn't the pickleball court. Because you're always missing pickleball, even if you just finished playing.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81GW6-umuzL._AC_SX385_.jpg",
     tags: ["unisex", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BJW9S5B4?tag=${AFFILIATE_TAG}`,
@@ -1101,7 +1101,7 @@ const shirts: Shirt[] = [
     title: "Men's Moisture Wicking Pickleball Performance Variant",
     description:
       "A moisture-wicking performance tee for the serious player. Keeps you dry and focused during long tournament days.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61lz6G2C70L._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DB25795F?tag=${AFFILIATE_TAG}`,
@@ -1112,7 +1112,7 @@ const shirts: Shirt[] = [
     title: "Was That Out? – Pickleball Letter Print Tee",
     description:
       "Join the eternal debate with this 'Was That Out?' letter print tee. Every pickleball player has been there — now wear the argument.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71HtZpb0rEL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C626FFN6?tag=${AFFILIATE_TAG}`,
@@ -1123,7 +1123,7 @@ const shirts: Shirt[] = [
     title: "Stay Out of The Kitchen – Printed Pickleball Tee",
     description:
       "Kitchen violations are no joke — unless they're on your shirt. A fun printed tee reminding everyone of pickleball's golden rule.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71rrWPizpFL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YPJC7W?tag=${AFFILIATE_TAG}`,
@@ -1134,7 +1134,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Definition – Sarcastic Graphic Novelty Tee",
     description:
       "The dictionary definition of pickleball, but way more accurate (and sarcastic). A novelty tee from Crazy Dog for players with a sense of humor.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PmvNhpKvL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DPLVXC29?tag=${AFFILIATE_TAG}`,
@@ -1145,7 +1145,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Polo – Performance Golf Outfits",
     description:
       "A performance polo that transitions seamlessly from the pickleball court to the golf course. AYUNIX quality with quick-dry comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81wPg1+eqmL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0D8KWK44B?tag=${AFFILIATE_TAG}`,
@@ -1156,7 +1156,7 @@ const shirts: Shirt[] = [
     title: "TIEEI Pickleball Shirts – Paddleball Themed Graphic",
     description:
       "A paddleball-themed graphic tee from TIEEI. Casual styling meets pickleball enthusiasm in this comfortable everyday shirt.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71qfQ0IeXRL._AC_SX385_.jpg",
     tags: ["unisex", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0G6T4Y2F9?tag=${AFFILIATE_TAG}`,
@@ -1167,7 +1167,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Women Tshirts – Gym Casual Team Lover",
     description:
       "A gym-ready casual pickleball tee for women. Perfect for team practices, friendly matches, or just representing the sport you love.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Ulu092iBL._AC_SX385_.jpg",
     tags: ["women's", "casual", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FP2YV5L8?tag=${AFFILIATE_TAG}`,
@@ -1178,7 +1178,7 @@ const shirts: Shirt[] = [
     title: "LBP Women's Pickleball Shirt – Pickle Ball Lover",
     description:
       "A cute pickleball lover shirt from LBP. Casual pickle ball tee that makes a great gift for the pickleball-obsessed woman in your life.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ArWRpj-ML._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJFCWKQJ?tag=${AFFILIATE_TAG}`,
@@ -1189,7 +1189,7 @@ const shirts: Shirt[] = [
     title: "Got It Oops Yours – Pickleball Sleeveless Tank",
     description:
       "The 'Got It Oops Yours' moment captured on a sleeveless summer workout graphic tee. A funny tank for warm-weather pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71-8Lerm8JL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GC66KCGV?tag=${AFFILIATE_TAG}`,
@@ -1200,7 +1200,7 @@ const shirts: Shirt[] = [
     title: "Qskall American Flag Pickleball – Patriotic Tee",
     description:
       "Fly the flag and the paddle with this American flag pickleball tee. Patriotic design meets paddleball lover style.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PnmaNvYCL._AC_SX385_.jpg",
     tags: ["men's", "patriotic", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYK8WK24?tag=${AFFILIATE_TAG}`,
@@ -1211,7 +1211,7 @@ const shirts: Shirt[] = [
     title: "SUWATOIN Women Pickleball Player Gift Tee",
     description:
       "A dedicated women's pickleball player gift tee from SUWATOIN. Comfortable fit, fun design, and perfect for the player who has everything.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71aqjtdbduL._AC_SX385_.jpg",
     tags: ["women's", "gift", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FHPDBK1Y?tag=${AFFILIATE_TAG}`,
@@ -1222,7 +1222,7 @@ const shirts: Shirt[] = [
     title: "I'm Missing Pickleball Right Now – Unisex Tee",
     description:
       "For every moment you're not on the court. This funny unisex tee captures the feeling every pickleball addict knows too well.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81GW6-umuzL._AC_SX385_.jpg",
     tags: ["unisex", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BJXQCKM8?tag=${AFFILIATE_TAG}`,
@@ -1233,7 +1233,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Champion – Graphic Tee",
     description:
       "Declare yourself the pickleball champion with this bold graphic tee. Whether it's official or self-proclaimed, wear it with pride.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71lkgx6gfyL._AC_SX385_.jpg",
     tags: ["unisex", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DLX1H5P3?tag=${AFFILIATE_TAG}`,
@@ -1244,7 +1244,7 @@ const shirts: Shirt[] = [
     title: "ZIRWTI Racerback Pickleball Tank – Play Pickleball",
     description:
       "A racerback tank from ZIRWTI that's built for movement. Play pickleball in style with this athletic gym-ready graphic tank.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71G0KJXmV0L._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GCCD3ZV8?tag=${AFFILIATE_TAG}`,
@@ -1255,7 +1255,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Performance Tee – UPF 50+ Men's Pickleball",
     description:
       "UPF 50+ quick-dry performance from Fjalljós. Purpose-built for pickleball players who need sun protection without sacrificing comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71QrWg4N6hL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTMTWJNN?tag=${AFFILIATE_TAG}`,
@@ -1266,7 +1266,7 @@ const shirts: Shirt[] = [
     title: "Got It Oops Yours – Ladies V-Neck Pickleball Gifts",
     description:
       "The beloved 'Got It Oops Yours' phrase on a ladies V-neck tee. A funny gift that resonates with every pickleball player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61MP4WR5qML._AC_SX385_.jpg",
     tags: ["women's", "funny", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D1Y7XKYT?tag=${AFFILIATE_TAG}`,
@@ -1277,7 +1277,7 @@ const shirts: Shirt[] = [
     title: "WESEOOU V-Neck Funny Casual Pickleball Tee",
     description:
       "A funny casual V-neck pickleball tee from WESEOOU. Relaxed fit with a playful design for the woman who takes her game seriously but not herself.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81sRHUlCLoL._AC_SX385_.jpg",
     tags: ["women's", "funny", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GH7Q9GKF?tag=${AFFILIATE_TAG}`,
@@ -1288,7 +1288,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Oversized Team Graphic Tee",
     description:
       "An oversized team-style graphic tee for the pickleball-obsessed. Relaxed fit and bold design make this a wardrobe staple.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61YsfaugeKL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0G6L8M47T?tag=${AFFILIATE_TAG}`,
@@ -1299,7 +1299,7 @@ const shirts: Shirt[] = [
     title: "COLORFUL BLING Women's Pickleball Player Graphic Tee",
     description:
       "A colorful pickleball player graphic tee from COLORFUL BLING. Short sleeve, crew neck, and stretchable cotton blend for all-day comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91ZGoUniGEL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CM5NV22N?tag=${AFFILIATE_TAG}`,
@@ -1310,7 +1310,7 @@ const shirts: Shirt[] = [
     title: "RMTXCD Tank Top – Pickleball Lover Summer",
     description:
       "A pickleball lover tank from RMTXCD for those hot summer court sessions. Casual, cute, and ready for game day.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71agLncpXAL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DNWL1PHK?tag=${AFFILIATE_TAG}`,
@@ -1321,7 +1321,7 @@ const shirts: Shirt[] = [
     title: "LAZYCHILD Heartbeat Pickleball Shirt – Graphic Tee",
     description:
       "Another heartbeat graphic pickleball tee from LAZYCHILD. Show the world your vital signs are all pickleball, all the time.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81FCaVloVsL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CKQQT32M?tag=${AFFILIATE_TAG}`,
@@ -1332,7 +1332,7 @@ const shirts: Shirt[] = [
     title: "Abraham Dinkin – Funny Pickleball Tee",
     description:
       "Four score and seven dinks ago... The Abraham Dinkin tee combines pickleball humor with presidential flair. A hilarious conversation piece.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81IOhe8+XKL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FPVWFTMP?tag=${AFFILIATE_TAG}`,
@@ -1343,7 +1343,7 @@ const shirts: Shirt[] = [
     title: "Camp Dink Counselor – Pickleball Shirt",
     description:
       "Welcome to Camp Dink, where every session is a pickleball clinic. A fun counselor-themed tee for the player who always teaches the newbies.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/815QJ4LzL4L._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CSPVD5MV?tag=${AFFILIATE_TAG}`,
@@ -1354,7 +1354,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic T – Casual Funny Sports",
     description:
       "A casual funny sports graphic tee for women who love pickleball. Lightweight, comfortable, and always game-ready.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61jK6+vAxGL._AC_SX385_.jpg",
     tags: ["women's", "funny", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0G7J4B55P?tag=${AFFILIATE_TAG}`,
@@ -1365,7 +1365,7 @@ const shirts: Shirt[] = [
     title: "SUWATOIN Women Pickleball Shirt – Casual Player Tee",
     description:
       "A casual pickleball player tee from SUWATOIN. Simple, comfortable design that works for game day and every day.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81KLThqoHML._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5LX8K96?tag=${AFFILIATE_TAG}`,
@@ -1376,7 +1376,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball Legend – Sports Hilarious Tee",
     description:
       "Because every pickleball court needs a legend, and it might as well be you. A hilarious sports tee from Crazy Dog T-Shirts.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718AciaWF2L._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0B1N8N42X?tag=${AFFILIATE_TAG}`,
@@ -1387,7 +1387,7 @@ const shirts: Shirt[] = [
     title: "Funny Golf Hawaiian Pickleball Polo – Print Shirt",
     description:
       "A bold Hawaiian-print pickleball polo that brings tropical vibes to the court. Quick-dry fabric meets vacation-mode styling.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71xqAUR7uxL._AC_SX385_.jpg",
     tags: ["men's", "polo", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0FQP565CT?tag=${AFFILIATE_TAG}`,
@@ -1398,7 +1398,7 @@ const shirts: Shirt[] = [
     title: "Funny Golf Polo – Pickleball Print Performance",
     description:
       "A performance polo with fun pickleball graphics. Moisture-wicking fabric for serious play, funny design for serious fun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91G+eWFaqUL._AC_SX385_.jpg",
     tags: ["men's", "polo", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GDZLQ9MW?tag=${AFFILIATE_TAG}`,
@@ -1409,7 +1409,7 @@ const shirts: Shirt[] = [
     title: "RMTXCD Women Pickleball Tank Top – Summer Sport",
     description:
       "A summer sport tank from RMTXCD for the active pickleball player. Cute vest design with a casual sleeveless cut.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71tc3jFZzRL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYJBH4T9?tag=${AFFILIATE_TAG}`,
@@ -1420,7 +1420,7 @@ const shirts: Shirt[] = [
     title: "Pickleball It's A Good Day – Sleeveless Retirement Tee",
     description:
       "A sleeveless retirement sport graphic tee. Every day is a good day to play pickleball when you're retired.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/612NWYrF+LL._AC_QL10_SX980_SY55_FMwebp_.jpg",
     tags: ["women's", "tank top", "retirement"],
     affiliateUrl: `https://www.amazon.com/dp/B0F1F1SQ4K?tag=${AFFILIATE_TAG}`,
@@ -1431,7 +1431,7 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank Tops – Graphic Summer Gifts",
     description:
       "A graphic summer pickleball tank from LHBNK. A perfect sleeveless gift for pickleball lovers who like to stay cool.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81k8E+qHHsL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYH51Q9S?tag=${AFFILIATE_TAG}`,
@@ -1442,7 +1442,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Tops – Got It Oops Yours Summer",
     description:
       "The 'Got It Oops Yours' classic on a summer workout tank. Sleeveless graphic design for warm-weather pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gjIQ2NyAL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GCC12Q6Z?tag=${AFFILIATE_TAG}`,
@@ -1453,7 +1453,7 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank – Summer Sleeveless Lover Gifts",
     description:
       "Another sleeveless summer tank from LHBNK. A graphic pickleball lover gift that keeps you cool while your game stays hot.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81kYEcpjbqL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYH635TG?tag=${AFFILIATE_TAG}`,
@@ -1464,7 +1464,7 @@ const shirts: Shirt[] = [
     title: "Got It Oops Yours – Women's Summer Workout Tank",
     description:
       "A summer workout graphic tank with the iconic pickleball callout. Perfect for outdoor games and gym sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71JCMprm9QL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GC4TNDSB?tag=${AFFILIATE_TAG}`,
@@ -1475,7 +1475,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Heartbeat – It's A Good Day Tank Top",
     description:
       "Heartbeat meets 'Good Day to Play' in this graphic tank top. Double the pickleball enthusiasm in one sleeveless design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81GeLYPnpVL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CWLDY4HV?tag=${AFFILIATE_TAG}`,
@@ -1486,7 +1486,7 @@ const shirts: Shirt[] = [
     title: "RXGOY Pickleball Improves Memory – Funny Tank Top",
     description:
       "Playing pickleball improves memory — it was in! A funny tank top from RXGOY about the game's most common memory recovery technique.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71sK8p8Z-DL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0GLX1S19K?tag=${AFFILIATE_TAG}`,
@@ -1497,7 +1497,7 @@ const shirts: Shirt[] = [
     title: "Heart Graphic Pickleball Tank – Women's Summer",
     description:
       "A heart graphic pickleball tank for the summer. Sleeveless design with a fun baseball-style graphic that shows your love for the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/716gp5HA82L._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DWMFF474?tag=${AFFILIATE_TAG}`,
@@ -1508,7 +1508,7 @@ const shirts: Shirt[] = [
     title: "It's a Good Day – Pickleball Letter Print Tank Top",
     description:
       "A fun letter-print tank top that declares every day a good day for pickleball. Casual fit for summer sports.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71VTPAcS9ML._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CXY57NPZ?tag=${AFFILIATE_TAG}`,
@@ -1519,7 +1519,7 @@ const shirts: Shirt[] = [
     title: "LIWYLU Pickleball Tank Tops – Graphic Player Gifts",
     description:
       "A graphic player gift tank from LIWYLU. Sleeveless design with pickleball lover graphics for the summer season.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81ZMQgiasHL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5Q2JBTN?tag=${AFFILIATE_TAG}`,
@@ -1530,7 +1530,7 @@ const shirts: Shirt[] = [
     title: "LIWYLU Pickleball Tank Top – Player Gift Dark",
     description:
       "A dark-colored pickleball tank from LIWYLU. Casual sports tee with sleeveless design perfect for active play.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71HB5UdSegL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5PZ1R1N?tag=${AFFILIATE_TAG}`,
@@ -1541,7 +1541,7 @@ const shirts: Shirt[] = [
     title: "SAUIVD Playing Pickleball Improves Memory – Tank",
     description:
       "A funny tank about how playing pickleball improves memory. Casual loose sleeveless design that's perfect for summer court sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+T8vnlYwL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0FCC1X64W?tag=${AFFILIATE_TAG}`,
@@ -1552,7 +1552,7 @@ const shirts: Shirt[] = [
     title: "Pickle Baller – Paddles and Ball Flowy Tank Top",
     description:
       "A flowy tank top with paddles-and-ball graphic from the Pickle Baller collection. Ladies fit for the casual sport enthusiast.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51A06bnpDYL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5P1XTVT?tag=${AFFILIATE_TAG}`,
@@ -1563,7 +1563,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Graphic T-Shirt – Was That Out Letter Print",
     description:
       "The iconic 'Was That Out?' debate captured on a women's graphic tee. Short sleeve summer style for the pickleball player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PLTWTqZDL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CCNBXZ7H?tag=${AFFILIATE_TAG}`,
@@ -1574,7 +1574,7 @@ const shirts: Shirt[] = [
     title: "Was That Out – Women's Pickleball Summer Graphic Tee",
     description:
       "Another variation of the beloved 'Was That Out?' graphic. Summer-ready short sleeve tee for the woman who lives for line calls.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/715aCVstyGL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CCNDTSJD?tag=${AFFILIATE_TAG}`,
@@ -1585,7 +1585,7 @@ const shirts: Shirt[] = [
     title: "It Was In – Retro Style Pickleball T-Shirt",
     description:
       "Settle the debate once and for all — it was IN. A retro-style pickleball tee with a classic cotton-blend design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51iIFdL8V3L._AC_SX385_.jpg",
     tags: ["unisex", "funny", "vintage"],
     affiliateUrl: `https://www.amazon.com/dp/B0G457L52Q?tag=${AFFILIATE_TAG}`,
@@ -1596,7 +1596,7 @@ const shirts: Shirt[] = [
     title: "Was That Out – Women's Pickleball Letter Print Tee",
     description:
       "The eternal pickleball question on a comfortable letter-print tee. A short sleeve summer top for the woman always making line calls.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71OSYoV3g-L._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C8HVDB3J?tag=${AFFILIATE_TAG}`,
@@ -1607,7 +1607,7 @@ const shirts: Shirt[] = [
     title: "Vintage Pickleballs – Retro Enthusiast Sporty Tee",
     description:
       "A retro-styled vintage pickleball tee for the enthusiast. Classic sporty design that looks like it came straight from the golden age of pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51zGTFTu20L._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CJKW3MH3?tag=${AFFILIATE_TAG}`,
@@ -1618,7 +1618,7 @@ const shirts: Shirt[] = [
     title: "HUURAY Funny Golf Polo – Pickleball Hawaiian Shirt",
     description:
       "A funny Hawaiian-style golf polo with pickleball graphics from HUURAY. Quick-dry moisture wicking meets vacation vibes.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71xqAUR7uxL._AC_SX385_.jpg",
     tags: ["men's", "polo", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0FQP6NK9N?tag=${AFFILIATE_TAG}`,
@@ -1629,7 +1629,7 @@ const shirts: Shirt[] = [
     title: "SUWATOIN Women Pickleball Player T-Shirt – Gift",
     description:
       "A pickleball player tee designed as the perfect gift. Comfortable, casual, and always appreciated by the pickleball lover in your life.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81KLThqoHML._AC_SX385_.jpg",
     tags: ["women's", "gift", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5M2PSRQ?tag=${AFFILIATE_TAG}`,
@@ -1640,7 +1640,7 @@ const shirts: Shirt[] = [
     title: "It's A Good Day – Vintage Pickleball Graphic Tee",
     description:
       "A vintage-style graphic tee declaring every day a good day for pickleball. Retro sports lover design on a comfortable cotton blend.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61GIQyL0TWL._AC_QL10_SX980_SY55_FMwebp_.jpg",
     tags: ["women's", "vintage", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4CB96DM?tag=${AFFILIATE_TAG}`,
@@ -1651,7 +1651,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Oversized Graphic T-Shirt – Team Baseball",
     description:
       "An oversized team-style graphic tee with baseball-fan flair and pickleball at its heart. Bold design for the bold player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71BAIpTDpWL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSDN98QM?tag=${AFFILIATE_TAG}`,
@@ -1662,7 +1662,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Vintage Graphic Tee – Sports Lover",
     description:
       "A vintage-inspired pickleball graphic tee that captures the retro spirit of the sport. Comfortable and stylish for any occasion.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51cLmcztJ3L._AC_SR38,50_.jpg",
     tags: ["women's", "vintage", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4CCY24Q?tag=${AFFILIATE_TAG}`,
@@ -1673,7 +1673,7 @@ const shirts: Shirt[] = [
     title: "LuxLass Pickleball Front & Back Tee – Women's",
     description:
       "Front and back printing from LuxLass for maximum pickleball statement. A paddleball-themed tee that catches eyes coming and going.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71R0h1NgvoL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0FCYT79V6?tag=${AFFILIATE_TAG}`,
@@ -1684,7 +1684,7 @@ const shirts: Shirt[] = [
     title: "LBP Pickleball Shirt Women – Casual Pickle Ball Tee",
     description:
       "A casual pickle ball tee from LBP that makes a thoughtful gift. Simple design, comfortable fit, and all about the love of pickleball.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/818un1fjyGL._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5Y4YSZS?tag=${AFFILIATE_TAG}`,
@@ -1695,7 +1695,7 @@ const shirts: Shirt[] = [
     title: "Funny Pickleball Queen – Women's Retro Vintage Shirt",
     description:
       "Crown yourself the Pickleball Queen with this retro vintage shirt. A funny paddle-themed tee from TeesMind for the court's royalty.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61oHDvCDTtL._AC_SX385_.jpg",
     tags: ["women's", "funny", "vintage"],
     affiliateUrl: `https://www.amazon.com/dp/B0DJYYRCQH?tag=${AFFILIATE_TAG}`,
@@ -1706,7 +1706,7 @@ const shirts: Shirt[] = [
     title: "Vintage Pickleballs Player – Distressed Illustration",
     description:
       "A distressed vintage illustration tee celebrating the pickleball player. Retro styling with a humorous sporty vibe.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61aN-sMO5eL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CJKPKZDB?tag=${AFFILIATE_TAG}`,
@@ -1717,7 +1717,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Fever – Retro Garment-Dyed T-Shirt",
     description:
       "Catch pickleball fever with this retro garment-dyed tee. Unisex fit with a vintage wash finish that looks better with every wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/618ctfhEvvL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0FFGC1FFM?tag=${AFFILIATE_TAG}`,
@@ -1728,7 +1728,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Fever (Back) – Retro Garment-Dyed Tee",
     description:
       "The back-print version of the Pickleball Fever tee. Retro style garment-dyed shirt for the player who leads from behind.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61RWVThWDAL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0FFG689PN?tag=${AFFILIATE_TAG}`,
@@ -1739,7 +1739,7 @@ const shirts: Shirt[] = [
     title: "Life is Good – Keep It Simple Pickleball Crusher (XXL)",
     description:
       "Keep it simple — play pickleball. The iconic Life is Good Crusher Tee in a larger size for the big player with a bigger love for the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71aGBUFrnLL._AC_SX385_.jpg",
     tags: ["men's", "premium", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C4XHS5NL?tag=${AFFILIATE_TAG}`,
@@ -1750,7 +1750,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Collegiate Style Tee",
     description:
       "Join the Pickleball USA Athletic Club with this collegiate-style vintage wash tee in pink, yellow, and green. Retro sports apparel at its finest.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61kb53NQwiL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZNCPLN?tag=${AFFILIATE_TAG}`,
@@ -1761,7 +1761,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Vintage Wash Tee",
     description:
       "Another colorway of the Pickleball USA Athletic Club tee. Collegiate style with a vintage wash finish that stands out.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61rnfsU2SFL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZM7899?tag=${AFFILIATE_TAG}`,
@@ -1772,7 +1772,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Retro Sports Tee",
     description:
       "Retro sports apparel meets pickleball pride. This collegiate-style tee looks like a vintage find from pickleball's early days.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61OCB7QQTpL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZN4D1R?tag=${AFFILIATE_TAG}`,
@@ -1783,7 +1783,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball Legend – Sarcastic Sports Tee",
     description:
       "A sarcastic sports tee declaring pickleball legend status. From Crazy Dog T-Shirts for the player who writes their own mythology.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718AciaWF2L._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0B1N6JYYF?tag=${AFFILIATE_TAG}`,
@@ -1794,7 +1794,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Pink Vintage Tee",
     description:
       "The pink colorway of the Pickleball USA Athletic Club tee. Vintage wash finish in a standout collegiate design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61E6iuD2PpL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZM2HL5?tag=${AFFILIATE_TAG}`,
@@ -1805,7 +1805,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Yellow Vintage Tee",
     description:
       "The yellow colorway of the Pickleball USA Athletic Club collection. Bright, bold, and perfect for the optimistic pickleball player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61rnfsU2SFL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZM9FSG?tag=${AFFILIATE_TAG}`,
@@ -1816,7 +1816,7 @@ const shirts: Shirt[] = [
     title: "Pickleball USA Athletic Club – Green Vintage Tee",
     description:
       "The green colorway rounding out the Pickleball USA Athletic Club collection. Collegiate vintage style for the dedicated player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61uRPrLbrTL._AC_SX385_.jpg",
     tags: ["unisex", "vintage", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2ZNDPW7?tag=${AFFILIATE_TAG}`,
@@ -1827,7 +1827,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Heartbeat Graphic – Women's Short Sleeve",
     description:
       "A heartbeat graphic pickleball tee showing your love runs deep. Short sleeve women's fit with a fun EKG-style design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ey+1CYPGL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C61V67SC?tag=${AFFILIATE_TAG}`,
@@ -1838,7 +1838,7 @@ const shirts: Shirt[] = [
     title: "LuxLass Pickleball Front & Back Print – Women's Tee",
     description:
       "Double the pickleball pride with front and back prints from LuxLass. A women's tee that makes a statement from every angle.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718vyEYUp+L._AC_SX385_.jpg",
     tags: ["women's", "graphic", "premium"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJR36X2X?tag=${AFFILIATE_TAG}`,
@@ -1849,7 +1849,7 @@ const shirts: Shirt[] = [
     title: "Stay Out of The Kitchen – Pickleball Printed Tee",
     description:
       "The kitchen rule, now on a printed tee. A funny pickleball player lover top that reminds everyone of the non-volley zone.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ImxvzhWWL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZCPNVP1?tag=${AFFILIATE_TAG}`,
@@ -1860,7 +1860,7 @@ const shirts: Shirt[] = [
     title: "Stay Out Kitchen – Women's Pickleball Printed Shirt",
     description:
       "Another take on the classic 'Stay Out of the Kitchen' pickleball tee. Funny, relatable, and always in style on the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71rrWPizpFL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YQBW55?tag=${AFFILIATE_TAG}`,
@@ -1871,7 +1871,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Team Graphic T-Shirt – Oversized Baseball",
     description:
       "An oversized baseball-style graphic tee for the pickleball team. Bold design with a relaxed fit that's perfect for game day.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61lwSWVS6FL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSHJQR99?tag=${AFFILIATE_TAG}`,
@@ -1882,7 +1882,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Vintage Graphic – Sports Lover Tee",
     description:
       "A vintage sports lover graphic tee celebrating the joy of pickleball. Retro design on a comfortable modern fit.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61GIQyL0TWL._AC_QL10_SX980_SY55_FMwebp_.jpg",
     tags: ["women's", "vintage", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4CM2BJK?tag=${AFFILIATE_TAG}`,
@@ -1893,7 +1893,7 @@ const shirts: Shirt[] = [
     title: "IFQ Heartbeat Pickleball – Women's Sport Lover Tee",
     description:
       "Show your heartbeat runs on pickleball with this sport lover tee from IFQ. A fun heartbeat graphic for the dedicated player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71-LMQY+JkL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GHYG8ZLG?tag=${AFFILIATE_TAG}`,
@@ -1904,7 +1904,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Polo – Sport Performance",
     description:
       "A sport performance polo from ChalkTalkSPORTS in adult sizes. Premium construction for competitive pickleball play.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71H5Q2JT9GL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0C41T5M66?tag=${AFFILIATE_TAG}`,
@@ -1915,7 +1915,7 @@ const shirts: Shirt[] = [
     title: "TIEEI Pickleball Shirts – Men's Paddleball Styled Tee",
     description:
       "A paddleball-styled graphic tee from TIEEI for the men's market. Casual fit with a player-themed design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71SxMdUYtQL._AC_SX385_.jpg",
     tags: ["men's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZW5JTMT?tag=${AFFILIATE_TAG}`,
@@ -1926,7 +1926,7 @@ const shirts: Shirt[] = [
     title: "Qskall American Flag Pickleball – 4th of July Tee",
     description:
       "Red, white, blue, and pickleball. A 4th of July patriotic tee from Qskall for the player who loves their country and their court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZJOZrGumL._AC_SX385_.jpg",
     tags: ["men's", "patriotic", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYK7Z9MT?tag=${AFFILIATE_TAG}`,
@@ -1937,7 +1937,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Polo – Performance Wicking Golf",
     description:
       "A performance wicking polo from AYUNIX designed for pickleball and golf. Versatile enough for the court and the clubhouse.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81wPg1+eqmL._AC_SX385_.jpg",
     tags: ["men's", "polo", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0D8KXQBJ4?tag=${AFFILIATE_TAG}`,
@@ -1948,7 +1948,7 @@ const shirts: Shirt[] = [
     title: "TeeUnion Funny Pickleball – Hilarious Sports Shirt",
     description:
       "Yet another hilarious hit from TeeUnion. This funny pickleball shirt keeps the humor coming with a fresh sports graphic design.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81pJJb48CJL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DVBFWQP4?tag=${AFFILIATE_TAG}`,
@@ -1959,7 +1959,7 @@ const shirts: Shirt[] = [
     title: "SUWATOIN Women Pickleball Player – Lover Gift Tee",
     description:
       "A women's pickleball player gift tee from SUWATOIN. Comfortable, cute, and perfect for expressing your love of the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Wb6PyUZFL._AC_SX385_.jpg",
     tags: ["women's", "gift", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5M1649J?tag=${AFFILIATE_TAG}`,
@@ -1970,7 +1970,7 @@ const shirts: Shirt[] = [
     title: "LBP Pickleball Shirt Women – Casual Gift Tee",
     description:
       "A casual gift tee from LBP for the pickleball-loving woman. Simple pickle ball design that works for any occasion.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81-Mqo8JnFL._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJFBNVXN?tag=${AFFILIATE_TAG}`,
@@ -1981,7 +1981,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball Legend – Sarcastic Graphic",
     description:
       "The pickleball legend sarcastic tee in another colorway. From Crazy Dog T-Shirts for the player who collects funny tees.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718AciaWF2L._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0B1N6GR2Y?tag=${AFFILIATE_TAG}`,
@@ -1992,7 +1992,7 @@ const shirts: Shirt[] = [
     title: "SUWATOIN Women Pickleball Player – Purple Gift Tee",
     description:
       "A purple colorway of the beloved SUWATOIN pickleball player tee. A standout gift for the woman who plays in style.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81g2TIn8VfL._AC_SX385_.jpg",
     tags: ["women's", "gift", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FHPDYK8G?tag=${AFFILIATE_TAG}`,
@@ -2003,7 +2003,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Oversized Team T-Shirt – Fan Graphic",
     description:
       "An oversized fan graphic tee for the pickleball team supporter. Relaxed fit and bold design for game day.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71BAIpTDpWL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSDQMT9Z?tag=${AFFILIATE_TAG}`,
@@ -2014,7 +2014,7 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank – Sleeveless Summer Gifts",
     description:
       "A sleeveless summer pickleball tank from LHBNK. A graphic pickleball lover gift to keep cool during hot court sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81sC5ix1grL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0F1861ZBV?tag=${AFFILIATE_TAG}`,
@@ -2025,7 +2025,7 @@ const shirts: Shirt[] = [
     title: "LBP Pickleball Women's Shirt – Pickle Ball Casual",
     description:
       "A casual pickle ball tee from LBP in a fresh design. Comfortable everyday wear for the devoted pickleball player.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/818un1fjyGL._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5Y545DM?tag=${AFFILIATE_TAG}`,
@@ -2036,7 +2036,7 @@ const shirts: Shirt[] = [
     title: "TUPOSU Pickleball Shirt – Player Lover Women's",
     description:
       "A pickleball player lover tee from TUPOSU. Graphic design that celebrates the sport with style and comfort.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+DWALt-7L._AC_SX385_.jpg",
     tags: ["women's", "graphic", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZCN2F2R?tag=${AFFILIATE_TAG}`,
@@ -2047,7 +2047,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts Funny Ball – Novelty Sports Graphic",
     description:
       "A novelty sports graphic tee about the funny ball that started it all. Retirement-ready pickleball humor.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71RpkhvYFlL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F12JPVJX?tag=${AFFILIATE_TAG}`,
@@ -2058,7 +2058,7 @@ const shirts: Shirt[] = [
     title: "Qskall Pickleball American Flag – Paddleball Tee",
     description:
       "A patriotic paddleball tee combining the American flag with pickleball. From Qskall for the player who represents on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PnmaNvYCL._AC_SX385_.jpg",
     tags: ["men's", "patriotic", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYKCSF9D?tag=${AFFILIATE_TAG}`,
@@ -2069,7 +2069,7 @@ const shirts: Shirt[] = [
     title: "I Can't I Have Pickleball – Women's Paddleball Tee",
     description:
       "The ultimate scheduling conflict excuse on a tee. 'I can't, I have pickleball' — because the court waits for no one.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81xm1VZq3IL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0D62QD6GY?tag=${AFFILIATE_TAG}`,
@@ -2080,7 +2080,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic T-Shirt – Player Gift Top",
     description:
       "A graphic player gift top for women. Short sleeve comfort meets pickleball pride in this versatile everyday tee.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91lj9+X+0cL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0C1M1F8TW?tag=${AFFILIATE_TAG}`,
@@ -2091,7 +2091,7 @@ const shirts: Shirt[] = [
     title: "Cutesong Pickleball Player T-Shirt – Sport Lover",
     description:
       "A sport lover tee from Cutesong for the dedicated pickleball player. Funny and cute design in a comfortable short sleeve fit.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Gb+sz6FzL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GJ9TRRDR?tag=${AFFILIATE_TAG}`,
@@ -2102,7 +2102,7 @@ const shirts: Shirt[] = [
     title: "TIEEI Peace Love Pickleball – Women's Sport Tee",
     description:
       "Peace, love, and pickleball on a women's sport tee from TIEEI. Because these three things make the world a better place.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71g9IU0fMuL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GJSN3W8W?tag=${AFFILIATE_TAG}`,
@@ -2113,7 +2113,7 @@ const shirts: Shirt[] = [
     title: "Stay Out Kitchen – Women's Printed Pickleball Shirt",
     description:
       "The kitchen rule on a fun printed tee for women. A pickleball player lover top that's always in season.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Ld4t2ebZL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YMMLDD?tag=${AFFILIATE_TAG}`,
@@ -2124,7 +2124,7 @@ const shirts: Shirt[] = [
     title: "COLORFUL BLING Women's Pickleball – Blue Crew Neck",
     description:
       "A blue crew neck pickleball tee from COLORFUL BLING. Stretchable cotton blend comfort with a standout pickleball graphic.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81qbgsye8mL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CSK85K3M?tag=${AFFILIATE_TAG}`,
@@ -2135,7 +2135,7 @@ const shirts: Shirt[] = [
     title: "RMTXCD Women Pickleball Tank – Casual Sleeveless",
     description:
       "A casual sleeveless pickleball tank from RMTXCD. Cute vest design for summer sport and casual outings.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+k5CDORcL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C9PDRH27?tag=${AFFILIATE_TAG}`,
@@ -2146,7 +2146,7 @@ const shirts: Shirt[] = [
     title: "Qskall American Flag Pickleball – Sporty Patriotic",
     description:
       "A sporty patriotic pickleball tee with American flag graphics. Perfect for holiday tournaments and patriotic player celebrations.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZJOZrGumL._AC_SX385_.jpg",
     tags: ["men's", "patriotic", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYK8M621?tag=${AFFILIATE_TAG}`,
@@ -2157,7 +2157,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Women Tshirts Team – Lover Gift Tee",
     description:
       "A pickleball team lover tee for women. Short sleeve gift that celebrates the player and the sport they love.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Ulu092iBL._AC_SX385_.jpg",
     tags: ["women's", "casual", "gift"],
     affiliateUrl: `https://www.amazon.com/dp/B0FP325XWV?tag=${AFFILIATE_TAG}`,
@@ -2168,7 +2168,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Heartbeat Graphic – Women's Short Sleeve",
     description:
       "A heartbeat graphic pickleball shirt for women in a fresh colorway. Show your pulse races for the game.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ey+1CYPGL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C61VL6MS?tag=${AFFILIATE_TAG}`,
@@ -2179,7 +2179,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball – Its Always A Good Time Tee",
     description:
       "It's always a good time for pickleball, and this sarcastic graphic novelty tee from Crazy Dog proves it. A humor-packed staple.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71GIPfhU4EL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJDT9GQF?tag=${AFFILIATE_TAG}`,
@@ -2190,7 +2190,7 @@ const shirts: Shirt[] = [
     title: "Men's Golf Shirt Short Sleeve Quick Dry Sport Polo Tee",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61BDCfYZRvL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B07PRT56KQ?tag=${AFFILIATE_TAG}`,
@@ -2201,7 +2201,7 @@ const shirts: Shirt[] = [
     title: "Men's Workout Running Shirts, Sun Protection Quick Dry Athletic Shirts",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51+w8RfqToL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B09HX9465T?tag=${AFFILIATE_TAG}`,
@@ -2212,7 +2212,7 @@ const shirts: Shirt[] = [
     title: "Men's UPF 50+ Sun Shirts 1/4 Zip Long Sleeve Golf Shirts",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/715VXs7nDEL._AC_SX385_.jpg",
     tags: ["men's", "performance", "long sleeve", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B09XXF2NVN?tag=${AFFILIATE_TAG}`,
@@ -2223,7 +2223,7 @@ const shirts: Shirt[] = [
     title: "Men's Long Sleeve Sun Shirts UPF 50+ 1/4 Zip Up Fishing Running Shirt",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71iWo-SHkvL._AC_SX385_.jpg",
     tags: ["men's", "performance", "long sleeve", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0B2RTTH51?tag=${AFFILIATE_TAG}`,
@@ -2234,7 +2234,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Tennis Shirt Quick Dry Pickleball Shirts UPF 50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Kwh+cNW3L._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0B4JXZTLZ?tag=${AFFILIATE_TAG}`,
@@ -2245,7 +2245,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Tennis Golf Pickleball Shirts UPF 50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61KlK+wOEPL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0B4JZG8S3?tag=${AFFILIATE_TAG}`,
@@ -2256,7 +2256,7 @@ const shirts: Shirt[] = [
     title: "Men's Quick Dry Tennis Pickleball Performance Polo Shirt",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91v30WMrdEL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0B5QW41MF?tag=${AFFILIATE_TAG}`,
@@ -2267,7 +2267,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball T Shirts – Dink Responsibly",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71DW63KrhQL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BFRN38F5?tag=${AFFILIATE_TAG}`,
@@ -2278,7 +2278,7 @@ const shirts: Shirt[] = [
     title: "Crazy Dog Mens Funny Pickleball T-Shirt – Legend Sarcastic Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71DW63KrhQL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BFRS4PG1?tag=${AFFILIATE_TAG}`,
@@ -2289,7 +2289,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny Pickleball T Shirts – Big Energy",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PGjHNT8VL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BHX2L5VK?tag=${AFFILIATE_TAG}`,
@@ -2300,7 +2300,7 @@ const shirts: Shirt[] = [
     title: "Women's UPF 50+ Pickleball Shirt – Sun Protection Athletic Top",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71DReCy0RhL._AC_SX385_.jpg",
     tags: ["women's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0BL1KF8XG?tag=${AFFILIATE_TAG}`,
@@ -2311,7 +2311,7 @@ const shirts: Shirt[] = [
     title: "Funny Pickleball T-Shirt – Retirement Plan",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/710qFwJ3+KL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BNFYBB3N?tag=${AFFILIATE_TAG}`,
@@ -2322,7 +2322,7 @@ const shirts: Shirt[] = [
     title: "Funny Pickleball T-Shirt – Weekend Forecast",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51zjvsZyBeL._AC_SR38,50_.jpg",
     tags: ["unisex", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BNSLLJ17?tag=${AFFILIATE_TAG}`,
@@ -2333,7 +2333,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball – Queen of the Court Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Cig2bUoWL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0BNT32GDX?tag=${AFFILIATE_TAG}`,
@@ -2344,7 +2344,7 @@ const shirts: Shirt[] = [
     title: "Women's Funny Pickleball Tee – Dink & Drive",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/617BfyM3auL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BRK8WMMV?tag=${AFFILIATE_TAG}`,
@@ -2355,7 +2355,7 @@ const shirts: Shirt[] = [
     title: "Mens Pickleball Dad T-Shirt – Funny Father's Day Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61gs-KQdWRL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0BTBQTLNR?tag=${AFFILIATE_TAG}`,
@@ -2366,7 +2366,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic T-Shirt – Player Gift Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gXwPtIOwL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0BWXJRTQY?tag=${AFFILIATE_TAG}`,
@@ -2377,7 +2377,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top – Stay Out of My Kitchen",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81AL2z45PSL._AC_SX385_.jpg",
     tags: ["unisex", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0BX6BZ6FG?tag=${AFFILIATE_TAG}`,
@@ -2388,7 +2388,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Long Sleeve Shirt – Quick Dry Performance",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/710UaeB0lYL._AC_SX385_.jpg",
     tags: ["unisex", "performance", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0BXC9T6D3?tag=${AFFILIATE_TAG}`,
@@ -2399,7 +2399,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Short Sleeve Polo Shirt",
     description:
       "A classic polo style meets pickleball culture. Perfect for the player who wants to look sharp on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Ho90f6ITL._AC_SX385_.jpg",
     tags: ["unisex", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQL5MB7?tag=${AFFILIATE_TAG}`,
@@ -2410,7 +2410,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Performance Sport Polo",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718bIBXqc1L._AC_SX385_.jpg",
     tags: ["unisex", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQLZJNG?tag=${AFFILIATE_TAG}`,
@@ -2421,7 +2421,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Polo – Youth & Adult Sizes",
     description:
       "A classic polo style meets pickleball culture. Perfect for the player who wants to look sharp on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71H5Q2JT9GL._AC_SX385_.jpg",
     tags: ["unisex", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0BZQNCKPH?tag=${AFFILIATE_TAG}`,
@@ -2432,7 +2432,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball V-Neck Tee – Just Dink It",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/91lj9+X+0cL._AC_SX385_.jpg",
     tags: ["women's", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0C1MF9J3N?tag=${AFFILIATE_TAG}`,
@@ -2443,7 +2443,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic Tee – Good Day to Play",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81UN7dsHXJL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C1N72MCC?tag=${AFFILIATE_TAG}`,
@@ -2454,7 +2454,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Button Down Dress Shirt",
     description:
       "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71X-m2kGJrL._AC_SX385_.jpg",
     tags: ["unisex", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C3FJZ8PH?tag=${AFFILIATE_TAG}`,
@@ -2465,7 +2465,7 @@ const shirts: Shirt[] = [
     title: "ChalkTalkSPORTS Pickleball Short Sleeve Performance Polo",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718bIBXqc1L._AC_SX385_.jpg",
     tags: ["unisex", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0C41TN66W?tag=${AFFILIATE_TAG}`,
@@ -2476,7 +2476,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tank Top – Good Day to Play Sleeveless",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61k9sYOdEXL._AC_SX385_.jpg",
     tags: ["women's", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0C52T7F7W?tag=${AFFILIATE_TAG}`,
@@ -2487,7 +2487,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Sleeveless Top – Sport Casual",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61k9sYOdEXL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C52TK1H1?tag=${AFFILIATE_TAG}`,
@@ -2498,7 +2498,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tank Top – Cute Pickleball Lover Vest",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51IyNmH9sKL._AC_SX385_.jpg",
     tags: ["women's", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5NN23SJ?tag=${AFFILIATE_TAG}`,
@@ -2509,7 +2509,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tank – Summer Casual Sport Sleeveless",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61IDmBBhuPL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5NQF76J?tag=${AFFILIATE_TAG}`,
@@ -2520,7 +2520,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Sleeveless Tank Top – Casual Athletic",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61S1YVB0R5L._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5NT6ZX3?tag=${AFFILIATE_TAG}`,
@@ -2531,7 +2531,7 @@ const shirts: Shirt[] = [
     title: "Women's It's a Good Day Pickleball Tank Top – Casual Sport",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Tm7lzEjXL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0C5NTCGBN?tag=${AFFILIATE_TAG}`,
@@ -2542,7 +2542,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Heartbeat Graphic T-Shirt for Women",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51N6ZbwyFcL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C7TGKPDC?tag=${AFFILIATE_TAG}`,
@@ -2553,7 +2553,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tee – Funny Heartbeat Graphic Short Sleeve",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71MdXRTQy+L._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0C9CP5ZLW?tag=${AFFILIATE_TAG}`,
@@ -2564,7 +2564,7 @@ const shirts: Shirt[] = [
     title: "MAXIMGR Pickleball Shirts for Women – Was That Out Letter Print",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PLTWTqZDL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CCNCRW5X?tag=${AFFILIATE_TAG}`,
@@ -2575,7 +2575,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Was That Out Graphic T-Shirt (Dark Grey)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PLTWTqZDL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CCNDDX7B?tag=${AFFILIATE_TAG}`,
@@ -2586,7 +2586,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Was That Out Graphic (Dark Blue)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61T21XrAT2L._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CDPW9YS9?tag=${AFFILIATE_TAG}`,
@@ -2597,7 +2597,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Sweatshirt for Women – Good Day to Play Long Sleeve Pullover",
     description:
       "Stay warm before and after your matches with this cozy pickleball hoodie. Perfect for cool-weather court sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61dEkL9PZfL._AC_SX385_.jpg",
     tags: ["women's", "long sleeve", "hoodie"],
     affiliateUrl: `https://www.amazon.com/dp/B0CDPWC3B9?tag=${AFFILIATE_TAG}`,
@@ -2608,7 +2608,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Was That Out Graphic (Purple)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61dEkL9PZfL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CDPXKJ4P?tag=${AFFILIATE_TAG}`,
@@ -2619,7 +2619,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Was That Out Graphic (Pink)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61dEkL9PZfL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CDPXQ9L7?tag=${AFFILIATE_TAG}`,
@@ -2630,7 +2630,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Heartbeat Graphic Tee",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61T21XrAT2L._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CDPZGBTS?tag=${AFFILIATE_TAG}`,
@@ -2641,7 +2641,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball T-Shirt – Cute Graphic Short Sleeve",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81ljJElK9eL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CGMY224F?tag=${AFFILIATE_TAG}`,
@@ -2652,7 +2652,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball V-Neck Tee – Heartbeat Graphic",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81c4wwxyLtL._AC_SX385_.jpg",
     tags: ["women's", "v-neck", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CJTTP3G6?tag=${AFFILIATE_TAG}`,
@@ -2663,7 +2663,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Performance Polo – Quick Dry Sport",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/810TMoJmjmL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0CK9P4TC3?tag=${AFFILIATE_TAG}`,
@@ -2674,7 +2674,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Polo Shirt – Moisture Wicking Athletic",
     description:
       "A classic polo style meets pickleball culture. Perfect for the player who wants to look sharp on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Gz2g2LsoL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0CKCSSHMX?tag=${AFFILIATE_TAG}`,
@@ -2685,7 +2685,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Performance Shirt – Quick Dry Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71I8DaVJyOL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0CKKD5TWG?tag=${AFFILIATE_TAG}`,
@@ -2696,7 +2696,7 @@ const shirts: Shirt[] = [
     title: "PINSPARK Women's Polo Tennis Pickleball Shirt V-Neck",
     description:
       "A classic polo style meets pickleball culture. Perfect for the player who wants to look sharp on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81KACKZLnlL._AC_SX385_.jpg",
     tags: ["women's", "polo", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0CLLMLZDN?tag=${AFFILIATE_TAG}`,
@@ -2707,7 +2707,7 @@ const shirts: Shirt[] = [
     title: "Women's Polo Tennis V-Neck with Collar Pickleball Shirts",
     description:
       "A classic polo style meets pickleball culture. Perfect for the player who wants to look sharp on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81KACKZLnlL._AC_SX385_.jpg",
     tags: ["women's", "polo", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0CLLMX192?tag=${AFFILIATE_TAG}`,
@@ -2718,7 +2718,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Top – UPF 50+ Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81PIYtf3luL._AC_SX385_.jpg",
     tags: ["women's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0CMXHHPTL?tag=${AFFILIATE_TAG}`,
@@ -2729,7 +2729,7 @@ const shirts: Shirt[] = [
     title: "Women's 1/4 Zip Collar Racerback Tank Top Pickleball Shirt",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71y5VoQc3wL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0CQXBD94M?tag=${AFFILIATE_TAG}`,
@@ -2740,7 +2740,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Casual Graphic Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61QvIzDKMsL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0CSB46Z2K?tag=${AFFILIATE_TAG}`,
@@ -2751,7 +2751,7 @@ const shirts: Shirt[] = [
     title: "Women's 1/4 Zip Up Collared Quick Dry Athletic Pickleball Shirt",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71LAXKZgbTL._AC_SX385_.jpg",
     tags: ["women's", "performance", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0CSCY4927?tag=${AFFILIATE_TAG}`,
@@ -2762,7 +2762,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Mom Tee – Sports Graphic",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Yg-+H3NUL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTGYGR4W?tag=${AFFILIATE_TAG}`,
@@ -2773,7 +2773,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball – Oversized Funny Graphic Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51ofWhhjcwL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTL1LZFB?tag=${AFFILIATE_TAG}`,
@@ -2784,7 +2784,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball V-Neck – Cute Novelty Sport Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/714JTPPbX5L._AC_SX385_.jpg",
     tags: ["women's", "funny", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTMB8BFZ?tag=${AFFILIATE_TAG}`,
@@ -2795,7 +2795,7 @@ const shirts: Shirt[] = [
     title: "Women's Funny Pickleball Tee – Retirement Sport Graphic",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71cn8+z-0kL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTNZMFMM?tag=${AFFILIATE_TAG}`,
@@ -2806,7 +2806,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Fun Sports Graphic Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/713r9Ua41rL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTR2G7H4?tag=${AFFILIATE_TAG}`,
@@ -2817,7 +2817,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball T-Shirt – Good Day to Play Graphic",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51KEGogvzLL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CTR3KYGG?tag=${AFFILIATE_TAG}`,
@@ -2828,7 +2828,7 @@ const shirts: Shirt[] = [
     title: "Pickleball T-Shirt & Tank Top – Good Day to Play Colorful",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81kh8FtqNxL._AC_SX385_.jpg",
     tags: ["unisex", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0CWL8Q8FV?tag=${AFFILIATE_TAG}`,
@@ -2839,7 +2839,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Top – Quick Dry Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71IJrfsPF-L._AC_SX385_.jpg",
     tags: ["women's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYGJD9BT?tag=${AFFILIATE_TAG}`,
@@ -2850,7 +2850,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tank – Sleeveless Athletic Top",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81k8E+qHHsL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYH4VX1G?tag=${AFFILIATE_TAG}`,
@@ -2861,7 +2861,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Running Tank – Moisture Wicking",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81k8E+qHHsL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYH6M6S4?tag=${AFFILIATE_TAG}`,
@@ -2872,7 +2872,7 @@ const shirts: Shirt[] = [
     title: "Women's Funny Pickleball Tee – Queen of the Court",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71R7BCHC0rL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYZ5Z6Q5?tag=${AFFILIATE_TAG}`,
@@ -2883,7 +2883,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic – Heartbeat Short Sleeve",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81af5JHl5kL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0CYZKGF99?tag=${AFFILIATE_TAG}`,
@@ -2894,7 +2894,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Yours Pickleball Gifts Funny V Neck",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61eNrqFuVXL._AC_SX385_.jpg",
     tags: ["women's", "funny", "v-neck", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D1Y9T32D?tag=${AFFILIATE_TAG}`,
@@ -2905,7 +2905,7 @@ const shirts: Shirt[] = [
     title: "Men's Quick Dry Pickleball Performance Shirt",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81C4HOZ4hrL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0D41N3L1M?tag=${AFFILIATE_TAG}`,
@@ -2916,7 +2916,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Polo – Quick Dry Athletic Sport Tee",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gYZhmYv7L._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0D467TT8R?tag=${AFFILIATE_TAG}`,
@@ -2927,7 +2927,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Good Day Novelty Sports Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61mwx9WQ4GL._AC_SR38,50_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4CD59VY?tag=${AFFILIATE_TAG}`,
@@ -2938,7 +2938,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Good Day Novelty Graphic Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Ufnv2t6BL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4LXRPSP?tag=${AFFILIATE_TAG}`,
@@ -2949,7 +2949,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Mom Tshirts Good Day to Play",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71wbJiL4ofL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4LXY5R4?tag=${AFFILIATE_TAG}`,
@@ -2960,7 +2960,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Mom Sports Graphic Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61RKyW8I9nL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4M6WPWR?tag=${AFFILIATE_TAG}`,
@@ -2971,7 +2971,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Letter Novelty Graphic Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/614g0F5I9AL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D4M7T7HG?tag=${AFFILIATE_TAG}`,
@@ -2982,7 +2982,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Player T-Shirt Lover Gift Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+jj9jdm-L._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5PP7Y1F?tag=${AFFILIATE_TAG}`,
@@ -2993,7 +2993,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball – Player Lover Gift Tank Top",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71+jj9jdm-L._AC_SX385_.jpg",
     tags: ["women's", "tank top", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D5PQJ9LP?tag=${AFFILIATE_TAG}`,
@@ -3004,7 +3004,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball T-Shirt – Funny Dink Graphic",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81xm1VZq3IL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0D62M485Q?tag=${AFFILIATE_TAG}`,
@@ -3015,7 +3015,7 @@ const shirts: Shirt[] = [
     title: "CQF Pickleball Shirts for Women – Stay Out of The Kitchen Printed",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71rrWPizpFL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YP1BZS?tag=${AFFILIATE_TAG}`,
@@ -3026,7 +3026,7 @@ const shirts: Shirt[] = [
     title: "CQF Pickleball Shirts – Kitchen Printed T-Shirt Funny Player",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71BJ+ODVwFL._AC_SX385_.jpg",
     tags: ["unisex", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0D6YPJ3DK?tag=${AFFILIATE_TAG}`,
@@ -3037,7 +3037,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Polo – Quick Dry Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81o-R95+yzL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0D7VZCJ5Q?tag=${AFFILIATE_TAG}`,
@@ -3048,7 +3048,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Men's Pickleball Shirts – Performance Golf Outfits",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/718yx+ScNHL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0D8WGX87X?tag=${AFFILIATE_TAG}`,
@@ -3059,7 +3059,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tee – Funny Sports Lover Short Sleeve",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/615QdOVPulL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0DB26KP3G?tag=${AFFILIATE_TAG}`,
@@ -3070,7 +3070,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top – Women's Sleeveless Workout Graphic",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gQNd6pqoL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DDYSS682?tag=${AFFILIATE_TAG}`,
@@ -3081,7 +3081,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top for Women – Racerback Graphic Tee",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gQNd6pqoL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DDZ62153?tag=${AFFILIATE_TAG}`,
@@ -3092,7 +3092,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Heartbeat Lover Player T-Shirt",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/710etuzkrnL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DF84NFJZ?tag=${AFFILIATE_TAG}`,
@@ -3103,7 +3103,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Heartbeat Sport Tee",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/710etuzkrnL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DF85DKG9?tag=${AFFILIATE_TAG}`,
@@ -3114,7 +3114,7 @@ const shirts: Shirt[] = [
     title: "AYUNIX Pickleball Shirts Men – Performance Moisture Wicking",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZXoRItARL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DG2KNYHX?tag=${AFFILIATE_TAG}`,
@@ -3125,7 +3125,7 @@ const shirts: Shirt[] = [
     title: "Mens Performance Short Sleeve Pickleball Shirt – UV Protection",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71GRCGOERIL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DJ6YHPPH?tag=${AFFILIATE_TAG}`,
@@ -3136,7 +3136,7 @@ const shirts: Shirt[] = [
     title: "Mens Performance Pickleball Shirt – Moisture-Wicking Design",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Ucot14OSL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DJRRST1K?tag=${AFFILIATE_TAG}`,
@@ -3147,7 +3147,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Short Sleeve – Funny Player Graphics",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61mNT4P2kEL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DK626N3L?tag=${AFFILIATE_TAG}`,
@@ -3158,7 +3158,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Tank – UPF 50+ Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71BWIUy0YqL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0DMBWSDJF?tag=${AFFILIATE_TAG}`,
@@ -3169,7 +3169,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic Tee – Casual Sports Lover",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61HdZM7HfLL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DPHNNB1Q?tag=${AFFILIATE_TAG}`,
@@ -3180,7 +3180,7 @@ const shirts: Shirt[] = [
     title: "Mens Funny T Shirts Pickleball Definition Sarcastic Graphic Novelty Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PmvNhpKvL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DPLW4FCW?tag=${AFFILIATE_TAG}`,
@@ -3191,7 +3191,7 @@ const shirts: Shirt[] = [
     title: "Crazy Dog Mens Funny Pickleball T-Shirt – Sarcastic Graphic",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61gNAsHH5tL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DPLYRM93?tag=${AFFILIATE_TAG}`,
@@ -3202,7 +3202,7 @@ const shirts: Shirt[] = [
     title: "Crazy Dog Mens Funny Pickleball T-Shirt – Hilarious Sports Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81x5nP+uacL._AC_SX385_.jpg",
     tags: ["men's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQ41G7J6?tag=${AFFILIATE_TAG}`,
@@ -3213,7 +3213,7 @@ const shirts: Shirt[] = [
     title: "Men's Cationic Moisture Wicking Pickleball Running Shirt",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81x5nP+uacL._AC_SX385_.jpg",
     tags: ["men's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQ45L7M8?tag=${AFFILIATE_TAG}`,
@@ -3224,7 +3224,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Men – Funny Graphic Novelty Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81pNy96niSL._AC_SX385_.jpg",
     tags: ["men's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DQNCL5PL?tag=${AFFILIATE_TAG}`,
@@ -3235,7 +3235,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Team Graphic T-Shirt",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/614jmo0pCIL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DR82B2D3?tag=${AFFILIATE_TAG}`,
@@ -3246,7 +3246,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Team Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51Q6WOatN9L._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0DR8459B5?tag=${AFFILIATE_TAG}`,
@@ -3257,7 +3257,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Team Graphic (Pink)",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/51+1pCM7lSL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DR85C5K6?tag=${AFFILIATE_TAG}`,
@@ -3268,7 +3268,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women – Oversized Baseball Style Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61lnKqtXAOL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DRCXTV3M?tag=${AFFILIATE_TAG}`,
@@ -3279,7 +3279,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Graphic T-Shirt Baseball",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71BAIpTDpWL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSK3223W?tag=${AFFILIATE_TAG}`,
@@ -3290,7 +3290,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women – Funny Team Graphic T-Shirt",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71Dtq1vBgqL._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DSWCG7ZK?tag=${AFFILIATE_TAG}`,
@@ -3301,7 +3301,7 @@ const shirts: Shirt[] = [
     title: "TeeUnion Funny Pickleball T-Shirt – Hilarious Sports Graphic",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81G+n7jUuuL._AC_SX385_.jpg",
     tags: ["unisex", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DVBHTFZ7?tag=${AFFILIATE_TAG}`,
@@ -3312,7 +3312,7 @@ const shirts: Shirt[] = [
     title: "Pickleball V-Neck T-Shirt for Women – Heart Graphic Short-Sleeve",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61U8nrxzSaL._AC_SX385_.jpg",
     tags: ["women's", "v-neck", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DXK7721Z?tag=${AFFILIATE_TAG}`,
@@ -3323,7 +3323,7 @@ const shirts: Shirt[] = [
     title: "Pickleball V-Neck T-Shirt for Women – Lovers Graphic",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61yn96ID3oL._AC_SX385_.jpg",
     tags: ["women's", "v-neck", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DXK83RW2?tag=${AFFILIATE_TAG}`,
@@ -3334,7 +3334,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Casual Player Gift Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81l-y6XZOHL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DY7W87XP?tag=${AFFILIATE_TAG}`,
@@ -3345,7 +3345,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Funny Sports Graphic Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71hRYfhSW-L._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DY7WTW7K?tag=${AFFILIATE_TAG}`,
@@ -3356,7 +3356,7 @@ const shirts: Shirt[] = [
     title: "LAZYCHILD Pickleball Shirts Women – Heartbeat Graphic Lover Gift",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/31IvAi9NhdL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYK3T6HD?tag=${AFFILIATE_TAG}`,
@@ -3367,7 +3367,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Heartbeat T-Shirt – Paddleball Lover",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71ZJOZrGumL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYK7X8Q3?tag=${AFFILIATE_TAG}`,
@@ -3378,7 +3378,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic Tee – Casual Short Sleeve Sports",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81C9H5yxHVL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYN517DM?tag=${AFFILIATE_TAG}`,
@@ -3389,7 +3389,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Player Graphic T-Shirt – Short Sleeve",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61mze-E6xBL._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0DYP9K688?tag=${AFFILIATE_TAG}`,
@@ -3400,7 +3400,7 @@ const shirts: Shirt[] = [
     title: "Women Pickleball Shirt – I Can't I Have Pickleball Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81fF-I0udqL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ28HF7T?tag=${AFFILIATE_TAG}`,
@@ -3411,7 +3411,7 @@ const shirts: Shirt[] = [
     title: "Women Pickleball Shirt – Paddleball Lover Tee Tops",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71X+wwXuciL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ6KP4P8?tag=${AFFILIATE_TAG}`,
@@ -3422,7 +3422,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Casual Pickle Ball Lover Tee (Cyan)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81TkmZergFL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ6PYB53?tag=${AFFILIATE_TAG}`,
@@ -3433,7 +3433,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Lover Casual Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71VGj3foqfL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZ6QJSTZ?tag=${AFFILIATE_TAG}`,
@@ -3444,7 +3444,7 @@ const shirts: Shirt[] = [
     title: "TIEEI Pickleball Shirts for Men – Player Themed Paddleball Tee",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61obiqCnjsL._AC_SX385_.jpg",
     tags: ["men's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZW2KY85?tag=${AFFILIATE_TAG}`,
@@ -3455,7 +3455,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Men – Player Themed T-Shirt Paddleball Lover (Green)",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71N0NYj0oWL._AC_SX385_.jpg",
     tags: ["men's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0DZW33ZZY?tag=${AFFILIATE_TAG}`,
@@ -3466,7 +3466,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Funny Ball Got It 2025 Novelty Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71RpkhvYFlL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0F12D4PPT?tag=${AFFILIATE_TAG}`,
@@ -3477,7 +3477,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Funny Ball Got It Novelty Tee",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71PbPEiUsdL._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0F2HM12RD?tag=${AFFILIATE_TAG}`,
@@ -3488,7 +3488,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Long Sleeve – Quick Dry Performance",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61PDZELZ+ML._AC_SX385_.jpg",
     tags: ["women's", "performance", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0F3JBJLJL?tag=${AFFILIATE_TAG}`,
@@ -3499,7 +3499,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Performance Polo – Men's Quick Dry Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81MEG3oWVDL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0F48SGR4M?tag=${AFFILIATE_TAG}`,
@@ -3510,7 +3510,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Graphic T-Shirt Player Gift",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Pm00IONqL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0F5QBG5M7?tag=${AFFILIATE_TAG}`,
@@ -3521,7 +3521,7 @@ const shirts: Shirt[] = [
     title: "Qskall Pickleball Shirts for Men – American Flag T-Shirt",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71KlcEmohJL._AC_SX385_.jpg",
     tags: ["men's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F6CNTM19?tag=${AFFILIATE_TAG}`,
@@ -3532,7 +3532,8 @@ const shirts: Shirt[] = [
     title: "Qskall Pickleball Shirts for Men – Flag Paddleball Tee",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: "https://m.media-amazon.com/images/I/719BzbYlxBL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/719BzbYlxBL._AC_SX385_.jpg",
     tags: ["men's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F6CQMST7?tag=${AFFILIATE_TAG}`,
   },
@@ -3542,7 +3543,8 @@ const shirts: Shirt[] = [
     title: "Qskall Pickleball Shirts for Men – American Flag Design",
     description:
       "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
-    image: "https://m.media-amazon.com/images/I/71KlcEmohJL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71KlcEmohJL._AC_SX385_.jpg",
     tags: ["men's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F6CRYQ41?tag=${AFFILIATE_TAG}`,
   },
@@ -3552,7 +3554,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Men – UPF 50+ Quick Dry Performance Tee",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gZdhRCTBL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0F88B9WW8?tag=${AFFILIATE_TAG}`,
@@ -3563,7 +3565,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Men – UPF 50+ Quick Dry Performance (Turtle)",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71gZdhRCTBL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0F88BYTJ4?tag=${AFFILIATE_TAG}`,
@@ -3574,7 +3576,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Men – UPF 50+ Performance Tee (Bite)",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61k5+yIzHeL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0F88LCXDR?tag=${AFFILIATE_TAG}`,
@@ -3585,7 +3587,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Hoodie – Funny Graphic Pullover Sweatshirt",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81+Dtp9y-1L._AC_SX385_.jpg",
     tags: ["unisex", "funny", "hoodie", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0F93VCRHC?tag=${AFFILIATE_TAG}`,
@@ -3596,7 +3598,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Hoodie – Stay Out of the Kitchen Sweatshirt",
     description:
       "Stay warm before and after your matches with this cozy pickleball hoodie. Perfect for cool-weather court sessions.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61D-X3BOzYL._AC_SX385_.jpg",
     tags: ["unisex", "hoodie"],
     affiliateUrl: `https://www.amazon.com/dp/B0F9NRFT7R?tag=${AFFILIATE_TAG}`,
@@ -3607,7 +3609,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Long Sleeve – Athletic UPF Performance",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61ufDPjwRHL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61ufDPjwRHL._AC_SX385_.jpg",
     tags: ["women's", "performance", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0FBTTMYWK?tag=${AFFILIATE_TAG}`,
   },
@@ -3617,7 +3620,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Hoodie – Graphic Pullover Sweatshirt",
     description:
       "Stay warm before and after your matches with this cozy pickleball hoodie. Perfect for cool-weather court sessions.",
-    image: "https://m.media-amazon.com/images/I/8190fSKZ0dL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/8190fSKZ0dL._AC_SX385_.jpg",
     tags: ["women's", "hoodie", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FBZJBL54?tag=${AFFILIATE_TAG}`,
   },
@@ -3627,7 +3631,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Player T-Shirt Paddleball Front Back",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61sJjrNOlGL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FCFP6DDF?tag=${AFFILIATE_TAG}`,
@@ -3638,7 +3642,7 @@ const shirts: Shirt[] = [
     title: "Women Pickleball Shirt – Player T-Shirt Lover Gift",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/6172QVJpscL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FH4MRVYP?tag=${AFFILIATE_TAG}`,
@@ -3649,7 +3653,8 @@ const shirts: Shirt[] = [
     title: "Women Pickleball Shirt – Player T-Shirt Lover Gift Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/61s-0rqXfkL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61s-0rqXfkL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FHJL6HB3?tag=${AFFILIATE_TAG}`,
   },
@@ -3659,7 +3664,8 @@ const shirts: Shirt[] = [
     title: "Women Pickleball Shirt – Player T-Shirt (Purple)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/81mWsk-1ATL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81mWsk-1ATL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FHKS5XQY?tag=${AFFILIATE_TAG}`,
   },
@@ -3669,7 +3675,8 @@ const shirts: Shirt[] = [
     title: "LBP Pickleball Shirt Women – Casual Pickle Ball Tee (Blue)",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/71GIPfhU4EL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71GIPfhU4EL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJDGNW45?tag=${AFFILIATE_TAG}`,
   },
@@ -3679,7 +3686,7 @@ const shirts: Shirt[] = [
     title: "LBP Pickleball Shirt Women – Pickle Ball Lover Casual Tee",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71VI-L+1yQL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FJRKZVMR?tag=${AFFILIATE_TAG}`,
@@ -3690,7 +3697,8 @@ const shirts: Shirt[] = [
     title: "LHBNK Pickleball Tank Tops Women – Graphic Tees Sleeveless",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/71mOQ2o-BaL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71mOQ2o-BaL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FLX8ZSNJ?tag=${AFFILIATE_TAG}`,
   },
@@ -3700,7 +3708,7 @@ const shirts: Shirt[] = [
     title: "Pickleball Hoodie – Men's Funny Graphic Sweatshirt",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81YVYB+IemL._AC_SX385_.jpg",
     tags: ["men's", "funny", "hoodie", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FM2DZ1FY?tag=${AFFILIATE_TAG}`,
@@ -3711,7 +3719,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Team Graphic T-Shirt Baseball",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: "https://m.media-amazon.com/images/I/619WOIaV-8L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/619WOIaV-8L._AC_SX385_.jpg",
     tags: ["women's", "funny", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0FPF3DPR6?tag=${AFFILIATE_TAG}`,
   },
@@ -3721,7 +3730,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women Funny Oversized Team Baseball Tee (Grey)",
     description:
       "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
-    image: "https://m.media-amazon.com/images/I/81f7E9rVm4L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81f7E9rVm4L._AC_SX385_.jpg",
     tags: ["women's", "funny"],
     affiliateUrl: `https://www.amazon.com/dp/B0FPFZLY3H?tag=${AFFILIATE_TAG}`,
   },
@@ -3731,7 +3741,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts Women – Player Tshirts Gym Casual Team Gift",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/71i+Mp7+Z-L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71i+Mp7+Z-L._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FQP3M7CG?tag=${AFFILIATE_TAG}`,
   },
@@ -3741,7 +3752,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Cowboy Pickle Design",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Rns9vxfUL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FT2CBZGP?tag=${AFFILIATE_TAG}`,
@@ -3752,7 +3763,8 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Performance Tee",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81mF6JewJdL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81mF6JewJdL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTC7GR6D?tag=${AFFILIATE_TAG}`,
   },
@@ -3762,7 +3774,7 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Palm Paradise",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81z5dglJ2NL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTCG7PGG?tag=${AFFILIATE_TAG}`,
@@ -3773,7 +3785,8 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Performance (Grey)",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81PfLWG5VkL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81PfLWG5VkL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTCZJ5H2?tag=${AFFILIATE_TAG}`,
   },
@@ -3783,7 +3796,8 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Quick Dry Design",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81PfLWG5VkL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81PfLWG5VkL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTD5XRLT?tag=${AFFILIATE_TAG}`,
   },
@@ -3793,7 +3807,8 @@ const shirts: Shirt[] = [
     title: "Fjalljós Pickleball Shirt Men – UPF 50+ Short Sleeve",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/915ngo5TOGL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/915ngo5TOGL._AC_SX385_.jpg",
     tags: ["men's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FTWGR5CW?tag=${AFFILIATE_TAG}`,
   },
@@ -3803,7 +3818,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless UPF 50+ V-Neck Tennis Pickleball Top",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81LKerGWduL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "v-neck", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVKT71S2?tag=${AFFILIATE_TAG}`,
@@ -3814,7 +3829,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless UPF 50+ Tennis Pickleball No-Tuck Peplum Top 1/4 Zip",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61r29ebza9L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61r29ebza9L._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "long sleeve", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSNSK4S?tag=${AFFILIATE_TAG}`,
   },
@@ -3824,7 +3840,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless UPF 50+ Quick Dry Tennis Pickleball No-Tuck Top",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61r29ebza9L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61r29ebza9L._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSPL2RG?tag=${AFFILIATE_TAG}`,
   },
@@ -3834,7 +3851,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless UPF 50+ Pickleball Top – No-Tuck Peplum",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61Eh-WsS9FL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61Eh-WsS9FL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSQR3J1?tag=${AFFILIATE_TAG}`,
   },
@@ -3844,7 +3862,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless UPF 50+ Tennis Pickleball – Racerback",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61LPgm-AxHL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSR1TF1?tag=${AFFILIATE_TAG}`,
@@ -3855,7 +3873,7 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Tennis Pickleball Top – V-Neck UPF 50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71T-hA16XyL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "v-neck", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSRR1Y8?tag=${AFFILIATE_TAG}`,
@@ -3866,7 +3884,7 @@ const shirts: Shirt[] = [
     title: "Women's Tennis Pickleball Top – V-Neck UPF 50+ Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61Eh-WsS9FL._AC_SX385_.jpg",
     tags: ["women's", "performance", "v-neck", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FVSS2SC9?tag=${AFFILIATE_TAG}`,
@@ -3877,7 +3895,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Oversized Casual Team Graphic",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/91zWCQFDNdL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/91zWCQFDNdL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FX46KY2N?tag=${AFFILIATE_TAG}`,
   },
@@ -3887,7 +3906,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tee – Casual Lover Graphic Top",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71-k671fiiL._AC_SX385_.jpg",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0FXL6GH53?tag=${AFFILIATE_TAG}`,
@@ -3898,7 +3917,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Shirt – UPF 50+ Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61r6IBsDAmL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61r6IBsDAmL._AC_SX385_.jpg",
     tags: ["women's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0FZQVK6TZ?tag=${AFFILIATE_TAG}`,
   },
@@ -3908,7 +3928,7 @@ const shirts: Shirt[] = [
     title: "Men's Pickleball Performance Polo – Quick Dry Sport",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/61PMLoslsBL._AC_SX385_.jpg",
     tags: ["men's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0FZTYKZTV?tag=${AFFILIATE_TAG}`,
@@ -3919,7 +3939,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Top – Quick Dry Tennis",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81xKBKduewL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81xKBKduewL._AC_SX385_.jpg",
     tags: ["women's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0G26LKLMY?tag=${AFFILIATE_TAG}`,
   },
@@ -3929,7 +3950,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Athletic Shirt – Moisture Wicking",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/81MXLxHRKhL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81MXLxHRKhL._AC_SX385_.jpg",
     tags: ["women's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0G26LZVVV?tag=${AFFILIATE_TAG}`,
   },
@@ -3939,7 +3961,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance V-Neck – Athletic Top",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/813O0oX9OIL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/813O0oX9OIL._AC_SX385_.jpg",
     tags: ["women's", "performance", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0G26NGT9X?tag=${AFFILIATE_TAG}`,
   },
@@ -3949,7 +3972,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Sport Tank – Quick Dry Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/81Vr2mg5nGL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0G26NHCVY?tag=${AFFILIATE_TAG}`,
@@ -3960,7 +3983,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Top – Collared Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/812o7+BI9TL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/812o7+BI9TL._AC_SX385_.jpg",
     tags: ["women's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0G26PC68Z?tag=${AFFILIATE_TAG}`,
   },
@@ -3970,7 +3994,8 @@ const shirts: Shirt[] = [
     title: "PINSPARK Women's Collared Athletic Pickleball Shirt",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/71QjqYkMBRL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71QjqYkMBRL._AC_SX385_.jpg",
     tags: ["women's", "performance"],
     affiliateUrl: `https://www.amazon.com/dp/B0G2S3KYCF?tag=${AFFILIATE_TAG}`,
   },
@@ -3980,7 +4005,7 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Tank Top – Racerback Athletic",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: 
+    image:
       "https://m.media-amazon.com/images/I/71M0VLbMX5L._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0G34SS9WH?tag=${AFFILIATE_TAG}`,
@@ -3991,7 +4016,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Racerback Tank",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61rfXro6bqL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61rfXro6bqL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0G3JHYV3P?tag=${AFFILIATE_TAG}`,
   },
@@ -4001,7 +4027,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Casual V-Neck Athletic Top",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/71U3BIbjJiL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71U3BIbjJiL._AC_SX385_.jpg",
     tags: ["women's", "performance", "v-neck", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0G3PJXVLY?tag=${AFFILIATE_TAG}`,
   },
@@ -4011,7 +4038,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance – Sleeveless Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/614v0NFR1fL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/614v0NFR1fL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0G4CKZTWL?tag=${AFFILIATE_TAG}`,
   },
@@ -4021,7 +4049,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance Shirt – UPF 50+ Tennis",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81wLFtPUsHL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81wLFtPUsHL._AC_SX385_.jpg",
     tags: ["women's", "performance", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0G4RK5TGW?tag=${AFFILIATE_TAG}`,
   },
@@ -4031,7 +4060,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Athletic – Sleeveless Workout Top",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/91EYzzI1kxL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/91EYzzI1kxL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0G4SLQ793?tag=${AFFILIATE_TAG}`,
   },
@@ -4041,7 +4071,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Shirt – Quick Dry V-Neck Athletic",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/81YAzkKvfXL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81YAzkKvfXL._AC_SX385_.jpg",
     tags: ["women's", "performance", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0G58C2B9C?tag=${AFFILIATE_TAG}`,
   },
@@ -4051,7 +4082,8 @@ const shirts: Shirt[] = [
     title: "Women's UPF 50+ Quick Dry Tennis Polo V-Neck Racerback Athletic Tank",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/71iVCnPzlAL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71iVCnPzlAL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo", "tank top", "v-neck", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0G7M3CPM6?tag=${AFFILIATE_TAG}`,
   },
@@ -4061,7 +4093,8 @@ const shirts: Shirt[] = [
     title: "PINSPARK Women's UPF 50+ Quick Dry Tennis Polo Racerback",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/71L02RIuyHL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71L02RIuyHL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0G7MD8LWD?tag=${AFFILIATE_TAG}`,
   },
@@ -4071,7 +4104,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Sleeveless Workout Graphic – Tank Tee (Vintage Grey)",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/71sc4ed-b-L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71sc4ed-b-L._AC_SX385_.jpg",
     tags: ["unisex", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GDW9N2CR?tag=${AFFILIATE_TAG}`,
   },
@@ -4081,7 +4115,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top for Women – Workout Graphic (Purple)",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/91G+eWFaqUL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/91G+eWFaqUL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GDZN1HBC?tag=${AFFILIATE_TAG}`,
   },
@@ -4091,7 +4126,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top – Got It Oops Yours Sleeveless Graphic",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/71KHi+HXPJL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71KHi+HXPJL._AC_SX385_.jpg",
     tags: ["unisex", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GF5XP2J9?tag=${AFFILIATE_TAG}`,
   },
@@ -4101,7 +4137,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top – Sleeveless Workout Graphic (Rose Gold)",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/81OEglfPURL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81OEglfPURL._AC_SX385_.jpg",
     tags: ["unisex", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GF7LR23C?tag=${AFFILIATE_TAG}`,
   },
@@ -4111,7 +4148,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank – Got It Oops Sleeveless Summer Tee",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/81OEglfPURL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81OEglfPURL._AC_SX385_.jpg",
     tags: ["unisex", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GF7Q1BT5?tag=${AFFILIATE_TAG}`,
   },
@@ -4121,7 +4159,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top Women – Sleeveless Summer Workout",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/71j7BqS-R1L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71j7BqS-R1L._AC_SX385_.jpg",
     tags: ["women's", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GF81BBGB?tag=${AFFILIATE_TAG}`,
   },
@@ -4131,7 +4170,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Tank Top Women – Got It Oops Graphic",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/71V3NEiYpdL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71V3NEiYpdL._AC_SX385_.jpg",
     tags: ["women's", "tank top", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GF836G7C?tag=${AFFILIATE_TAG}`,
   },
@@ -4141,7 +4181,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt Women – Oversized Team Graphic Baseball",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/815WeJ+bH9L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/815WeJ+bH9L._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GG7CNS52?tag=${AFFILIATE_TAG}`,
   },
@@ -4151,7 +4192,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts Women – It's A Good Day to Play V-Neck",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/81sRHUlCLoL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/81sRHUlCLoL._AC_SX385_.jpg",
     tags: ["women's", "v-neck"],
     affiliateUrl: `https://www.amazon.com/dp/B0GH7V91DW?tag=${AFFILIATE_TAG}`,
   },
@@ -4161,7 +4203,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirts for Women – Casual Letter Printed Tees",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/91I7wuh3fbL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/91I7wuh3fbL._AC_SX385_.jpg",
     tags: ["women's", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GHRCSCLD?tag=${AFFILIATE_TAG}`,
   },
@@ -4171,7 +4214,8 @@ const shirts: Shirt[] = [
     title: "Pickleball Shirt for Women – Heartbeat Player Sport Tee",
     description:
       "Show that pickleball is in your heartbeat with this fun graphic tee. A must-have for passionate players.",
-    image: "https://m.media-amazon.com/images/I/71YN6BzB1+L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/71YN6BzB1+L._AC_SX385_.jpg",
     tags: ["women's", "graphic"],
     affiliateUrl: `https://www.amazon.com/dp/B0GHY2HVFZ?tag=${AFFILIATE_TAG}`,
   },
@@ -4181,7 +4225,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Tennis Pickleball Golf Polo – Quick Dry UPF50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/613wunQqXwL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/613wunQqXwL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GL26BST3?tag=${AFFILIATE_TAG}`,
   },
@@ -4191,7 +4236,8 @@ const shirts: Shirt[] = [
     title: "Outfeel Women's Sleeveless Pickleball Golf Polo – Breathable Mesh",
     description:
       "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
-    image: "https://m.media-amazon.com/images/I/613wunQqXwL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/613wunQqXwL._AC_SX385_.jpg",
     tags: ["women's", "polo", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GL28GPXM?tag=${AFFILIATE_TAG}`,
   },
@@ -4201,7 +4247,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Pickleball – Golf Polo 1/4 Zip UPF50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61ADMZCiMYL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61ADMZCiMYL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo", "tank top", "long sleeve"],
     affiliateUrl: `https://www.amazon.com/dp/B0GL31WYKR?tag=${AFFILIATE_TAG}`,
   },
@@ -4211,7 +4258,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Golf Polo – Sleeveless Quick Dry",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61UqfbRutWL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61UqfbRutWL._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GL35SNKN?tag=${AFFILIATE_TAG}`,
   },
@@ -4221,7 +4269,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Polo – UPF50+ Breathable Mesh Back",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/5196xcF207L._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/5196xcF207L._AC_SX385_.jpg",
     tags: ["women's", "performance", "polo"],
     affiliateUrl: `https://www.amazon.com/dp/B0GL37414D?tag=${AFFILIATE_TAG}`,
   },
@@ -4231,7 +4280,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Performance – Sleeveless UPF 50+",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/814ejaIOlAL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/814ejaIOlAL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top", "UPF"],
     affiliateUrl: `https://www.amazon.com/dp/B0GLXVYZSV?tag=${AFFILIATE_TAG}`,
   },
@@ -4241,7 +4291,8 @@ const shirts: Shirt[] = [
     title: "Women's Sleeveless Pickleball Top – Athletic Performance",
     description:
       "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
-    image: "https://m.media-amazon.com/images/I/61guJmHL3VL._AC_SX385_.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61guJmHL3VL._AC_SX385_.jpg",
     tags: ["women's", "performance", "tank top"],
     affiliateUrl: `https://www.amazon.com/dp/B0GLYLVMK5?tag=${AFFILIATE_TAG}`,
   },
@@ -4251,7 +4302,8 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic T-Shirt – Casual Short Sleeve",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/B1On3Y+j0-L._CLa%7C2140%2C2000%7C81RxH5%2BpaWL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png",
+    image:
+      "https://m.media-amazon.com/images/I/B1On3Y+j0-L._CLa%7C2140%2C2000%7C81RxH5%2BpaWL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GVBY9TZT?tag=${AFFILIATE_TAG}`,
   },
@@ -4261,11 +4313,605 @@ const shirts: Shirt[] = [
     title: "Women's Pickleball Graphic Tee – Sports Lover Casual",
     description:
       "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
-    image: "https://m.media-amazon.com/images/I/B1mEhjGJ2nL._CLa%7C2140%2C2000%7CB1umaMYiAtL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png",
+    image:
+      "https://m.media-amazon.com/images/I/B1mEhjGJ2nL._CLa%7C2140%2C2000%7CB1umaMYiAtL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png",
     tags: ["women's", "graphic", "casual"],
     affiliateUrl: `https://www.amazon.com/dp/B0GVBYY2BD?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "392",
+    asin: "B0F83RHRBV",
+    title: "Pickleball Art for Men Women Pickleball Player Pickle Ball T-Shirt",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/B1pppR4gVKL._CLa%7C2140%2C2000%7C91%2BizMOvb9L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0F83RHRBV?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "393",
+    asin: "B0CQC2ZSRH",
+    title: "PINSPARK Workout Tops for Women Racerback Tank Tops Sleeveless Athletic Running Shirts Lightweight Yoga Gym Tank,2 Pack S-3XL",
+    description:
+      "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
+    image:
+      "https://m.media-amazon.com/images/I/81iZKeOt18L._AC_SX385_.jpg",
+    tags: ["women's", "performance", "tank top"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CQC2ZSRH?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "394",
+    asin: "B0G4416YG3",
+    title: "ZITY 7 Pack T-Shirts for Men Rashguard Swim Shirt UPF 50+ Athletic Workout Tee Shirt Sun Protection Fast Dry Moisture Wicking",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/71x1o0vckYL._AC_SX385_.jpg",
+    tags: ["men's", "performance", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B0G4416YG3?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "395",
+    asin: "B0DQ2F8BYL",
+    title: "Pickleball Lover Meme Apparel Gifts Graphic Tees",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/71bLWypUYqL._AC_UL320_.jpg",
+    tags: ["unisex", "graphic", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DQ2F8BYL?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "396",
+    asin: "B095XFQFRL",
+    title: "Funny Pickleball Shirts",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/719T3l6n4hL._AC_UL320_.jpg",
+    tags: ["unisex", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B095XFQFRL?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "397",
+    asin: "B082FXZ23P",
+    title: "Funny Pickleball Shirts & Gifts Design Studio",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/B1EEECvNMXL._CLa%7C2140%2C2000%7C81ByN0xcJ3L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL320_.png",
+    tags: ["unisex", "funny", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B082FXZ23P?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "398",
+    asin: "B0DSDPWMJB",
+    title: "Pickleball Shirt Women Funny Oversized Pickleball Team Graphic T-Shirt Baseball Fan Tee Short Sleeve Tops",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/61lwSWVS6FL._AC_UL320_.jpg",
+    tags: ["women's", "funny", "graphic"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DSDPWMJB?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "399",
+    asin: "B0D5Y9N5YH",
+    title: "Women's Workout Tops Racerback Athletic Tank Tops Sleeveless Loose Fit Yoga Running Gym Shirts for Women",
+    description:
+      "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
+    image:
+      "https://m.media-amazon.com/images/I/71K3nspF-eL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "tank top"],
+    affiliateUrl: `https://www.amazon.com/dp/B0D5Y9N5YH?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "400",
+    asin: "B09V3K35MD",
+    title: "Funny Pickleball Humor T-Shirt: Why I Lose - Black, Classic Fit, Crew Neck, Short Sleeve",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/61Z755QjKEL._AC_UL320_.jpg",
+    tags: ["unisex", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B09V3K35MD?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "401",
+    asin: "B0G31B683R",
+    title: "Funny Pickleball Player Logo T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/61brMJWRchL._AC_UL320_.jpg",
+    tags: ["unisex", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B0G31B683R?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "402",
+    asin: "B0CRC76VH4",
+    title: "Mickey Mouse - National Pickleball League T-Shirt",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/71hE4FwnZjL._AC_UL320_.jpg",
+    tags: ["unisex", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CRC76VH4?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "403",
+    asin: "B0DYMLFPTP",
+    title: "Men's Athletic T-Shirt Performance Gym Shirt Quick Dry Moisture Wicking Running Workout Short Sleeve Tops",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/71APhI2uV4L._AC_UL320_.jpg",
+    tags: ["men's", "performance"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DYMLFPTP?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "404",
+    asin: "B0BCX4B5HX",
+    title: "Cool Pickleball Design for Men Women Dink Pickleball Player T-Shirt Small",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/61GIQyL0TWL._AC_UL320_.jpg",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0BCX4B5HX?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "405",
+    asin: "B0FRSX8YS8",
+    title: "Pickleball Art for Men Women Pickle Ball Pickleball Lover T-Shirt",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/61qBu-PvSCL._AC_UL320_.jpg",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FRSX8YS8?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "406",
+    asin: "B0D5M1C2VS",
+    title: "Women Pickleball Shirt Pickleball Player T-Shirt Pickleball Lover Gift Tee Tops",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/81Wb6PyUZFL._AC_UL320_.jpg",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0D5M1C2VS?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "407",
+    asin: "B0F7R95ZTJ",
+    title: "Pickleball Shirt for Women Pickleball Player T-Shirt Pickleball Lover Tee Tops",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/71o+GZB4tQL._AC_UL320_.jpg",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0F7R95ZTJ?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "408",
+    asin: "B0F5WN1YP5",
+    title: "Pickleball It was in T Shirt – Funny Pickleball Humor Tee for Men or Women, Unisex Adult Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/51NSyr57NKL._AC_UL320_.jpg",
+    tags: ["women's", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B0F5WN1YP5?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "409",
+    asin: "B0DLSVKF99",
+    title: "It was in Funny Pickleball Player Paddleball Lover T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/614ApF3fbbL._AC_UL320_.jpg",
+    tags: ["unisex", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DLSVKF99?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "410",
+    asin: "B0CTCYQTPP",
+    title: "Mens Never Underestimate an Old Man with A Pickleball Paddle T-Shirt",
+    description:
+      "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
+    image:
+      "https://m.media-amazon.com/images/I/71d-83WmIqL._AC_UL320_.jpg",
+    tags: ["men's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CTCYQTPP?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "411",
+    asin: "B0F5WP8XWV",
+    title: "Pickleball Dink Responsibly T Shirt – Funny Pickleball Gift Tee, Unisex Adult Shirt for Men or Women",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/519T4p+0EhL._AC_UL320_.jpg",
+    tags: ["women's", "funny", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0F5WP8XWV?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "412",
+    asin: "B0FJFD9J8H",
+    title: "Pickleball Shirt Women Pickle Ball Lover T Shirt Pickleball Gifts Casual Pickle Ball Tee Tops",
+    description:
+      "A stylish pickleball tee designed for women who love the game. Comfortable enough for all-day wear.",
+    image:
+      "https://m.media-amazon.com/images/I/81-Mqo8JnFL._AC_UL320_.jpg",
+    tags: ["women's", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FJFD9J8H?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "413",
+    asin: "B0D7QSVC31",
+    title: "Funny Pickleball Lover Pun with a Pickle Playing Pickle Ball T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/71qcKEgwvxL._AC_UL320_.jpg",
+    tags: ["unisex", "funny"],
+    affiliateUrl: `https://www.amazon.com/dp/B0D7QSVC31?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "414",
+    asin: "B0FTFHV7YG",
+    title: "Mens Pickleball Served Graphic Crew Neck Short Sleeve Athletic Pickleball Casual Tops Casual - Red",
+    description:
+      "A great pickleball tee for the guys. Whether you're competing or just hanging out, this shirt has you covered.",
+    image:
+      "https://m.media-amazon.com/images/I/41NuLNdi3RL._AC_UL320_.jpg",
+    tags: ["men's", "performance", "graphic", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FTFHV7YG?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "415",
+    asin: "B0DS662HCP",
+    title: "Women's Workout Tank Tops Lightweight Sleeveless High Neck Athletic Shirts for Running Gym Tennis Pickleball",
+    description:
+      "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
+    image:
+      "https://m.media-amazon.com/images/I/71K8dRas2TL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "tank top"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DS662HCP?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "416",
+    asin: "B0CKTXR649",
+    title: "Snoopy Pickleball Club 1950 T-Shirt",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/61OZ8r3DuAL._AC_UL320_.jpg",
+    tags: ["unisex", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CKTXR649?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "417",
+    asin: "B0BHTHB878",
+    title: "Playing Pickleball Improves Memory Pickleball T-Shirt Small",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/71p8t2jF44L._AC_UL320_.jpg",
+    tags: ["unisex", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0BHTHB878?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "418",
+    asin: "B0FP66Y47M",
+    title: "T-Shirt",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/61SuCiKtxaL._AC_UL320_.jpg",
+    tags: ["unisex", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FP66Y47M?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "419",
+    asin: "B0D3D3R7VM",
+    title: "Workout Tank Tops for Women Seamless Full Length Gym Tops Athletic Yoga Top Built in Bra",
+    description:
+      "Stay cool on the court with this sleeveless pickleball top. Lightweight and breathable for peak performance.",
+    image:
+      "https://m.media-amazon.com/images/I/71OeVDlq0mL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "tank top"],
+    affiliateUrl: `https://www.amazon.com/dp/B0D3D3R7VM?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "420",
+    asin: "B09XV1GDGT",
+    title: "Cool Pickleball Coach with Saying I Can't I Have Pickleball T-Shirt",
+    description:
+      "Rep your love for pickleball with this must-have shirt. Comfortable, stylish, and perfect for any pickleball enthusiast.",
+    image:
+      "https://m.media-amazon.com/images/I/61XLxGoPZoL._AC_UL320_.jpg",
+    tags: ["unisex", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B09XV1GDGT?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "421",
+    asin: "B0FLQ4PN9P",
+    title: "Pickleball Legend T Shirt – Funny Pickleball Player Gift Tee for Men or Women, Unisex Adult",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/511Wan4SokL._AC_UL320_.jpg",
+    tags: ["women's", "funny", "casual"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FLQ4PN9P?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "422",
+    asin: "B07W5SC6S5",
+    title: "Men's Long Sleeve Shirts UPF 50+ UV Sun Protection Athletic Shirts for Hiking Running Workout Rash Guard",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/71cyCuGYTVL._AC_UL320_.jpg",
+    tags: ["men's", "performance", "long sleeve", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B07W5SC6S5?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "423",
+    asin: "B0DPZTJHTB",
+    title: "Long Sleeve Workout Tops for Women Golf Shirt UPF 50+ Swim Shirts for Woman UV Sun Protection Quarter Zip Pullover",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/61S4lEGNYzL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "long sleeve", "hoodie", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DPZTJHTB?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "424",
+    asin: "B09MLK7FDW",
+    title: "Funny Pickleball Memory Graphic Women Men Pickleball Player Long Sleeve T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/71bPQnlURHL._AC_UL320_.jpg",
+    tags: ["women's", "funny", "long sleeve", "graphic"],
+    affiliateUrl: `https://www.amazon.com/dp/B09MLK7FDW?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "425",
+    asin: "B0CSDLQB7S",
+    title: "Women's Sun Shirts UPF 50+ Long Sleeve UV Protection Shirt Lightweight Quick Dry Workout Hiking Tops for Women",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/61j0aJP2rCL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "long sleeve", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CSDLQB7S?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "426",
+    asin: "B09P42VM2K",
+    title: "Pickleball Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/71dvuEDSOxL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B09P42VM2K?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "427",
+    asin: "B0CLM5KKXT",
+    title: "Pickleball Paddle & Text Pickleball Player Word Art Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/61k4JWzNzSL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CLM5KKXT?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "428",
+    asin: "B0BMG8QN6D",
+    title: "Cool Modern Gradient Grey Design Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/711FVhOqITL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0BMG8QN6D?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "429",
+    asin: "B09ZFD9YCM",
+    title: "Women's I Can't I Have Pickleball Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/61+I4BOqbAL._AC_UL320_.jpg",
+    tags: ["women's", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B09ZFD9YCM?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "430",
+    asin: "B0BFQVNGGZ",
+    title: "Life Isn't All Dogs and Pickleball Player Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/81T7X1qOCzL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0BFQVNGGZ?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "431",
+    asin: "B0FS1PTFM1",
+    title: "Dripping Pickleball Tie Dye Splash Paddleball Lover Sports Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/71QOELSnmvL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0FS1PTFM1?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "432",
+    asin: "B07PZ6Q18C",
+    title: "Sunshine Waves and Pickleball Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/711dkZBYB+L._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B07PZ6Q18C?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "433",
+    asin: "B0B77Y63FV",
+    title: "Awesome Life is Good Pickleball Sports Enthusiast Men Women Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/81pdkscROKL._AC_UL320_.jpg",
+    tags: ["women's", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0B77Y63FV?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "434",
+    asin: "B09X6X6P9G",
+    title: "Vintage Retro Pickleball Player Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/61mGN4xwsYL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve", "vintage"],
+    affiliateUrl: `https://www.amazon.com/dp/B09X6X6P9G?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "435",
+    asin: "B0G1JDS62Z",
+    title: "Cool Logo Pickleball Player Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/61Im0bZR-2L._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0G1JDS62Z?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "436",
+    asin: "B0DB8D8Y9Z",
+    title: "Funny Pickleball Lovers Got It Oops Yours Long Sleeve T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/71vbPL5vtbL._AC_UL320_.jpg",
+    tags: ["unisex", "funny", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DB8D8Y9Z?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "437",
+    asin: "B09P6NCXN4",
+    title: "Pickleball chick Funny Pickleball Long Sleeve T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/71bKATSno5L._AC_UL320_.jpg",
+    tags: ["unisex", "funny", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B09P6NCXN4?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "438",
+    asin: "B0B1766BL4",
+    title: "Peace Love Pickleball Ladies Cute Pickleball Player Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/810nSk15jYL._AC_UL320_.jpg",
+    tags: ["women's", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0B1766BL4?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "439",
+    asin: "B0CJTF5KQG",
+    title: "Women's Palm Springs Floral Pickleball Player Pretty Floral Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/71U4Gd21pLL._AC_UL320_.jpg",
+    tags: ["women's", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CJTF5KQG?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "440",
+    asin: "B07HZT1ZT9",
+    title: "Pickleball Distressed Retro Blue Gradient Design Long Sleeve T-Shirt",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/719wClk06wL._AC_UL320_.jpg",
+    tags: ["unisex", "long sleeve", "vintage"],
+    affiliateUrl: `https://www.amazon.com/dp/B07HZT1ZT9?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "441",
+    asin: "B0DT9MWJRW",
+    title: "Women UPF 50+ UV Shirts Long Sleeve with Thumb Holes Workout Sun Shirt Quick Dry Athletic Hiking Running Tops",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/61hHBZLk-SL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "long sleeve", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B0DT9MWJRW?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "442",
+    asin: "B0CVXQBZ2N",
+    title: "Women Long Sleeve Shirts Sun Protection 1/4 Zip Summer Quick Dry Hiking Shirts Quarter Zip Pullover for Women",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/81NpyM9NBGL._AC_UL320_.jpg",
+    tags: ["women's", "performance", "long sleeve", "hoodie"],
+    affiliateUrl: `https://www.amazon.com/dp/B0CVXQBZ2N?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "443",
+    asin: "B0D5CTJB6L",
+    title: "Men's Sun Protection Shirts UPF 50+ Long Sleeve Swim Rash Guard Shirt Running Workout Athletic Hiking UV Fishing",
+    description:
+      "High-performance pickleball apparel with moisture-wicking technology. Designed for comfort on and off the court.",
+    image:
+      "https://m.media-amazon.com/images/I/715PTX5u6SL._AC_UL320_.jpg",
+    tags: ["men's", "performance", "long sleeve", "UPF"],
+    affiliateUrl: `https://www.amazon.com/dp/B0D5CTJB6L?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "444",
+    asin: "B09R462KB2",
+    title: "Funny Heartbeat Pickleball Player EKG Woman Men Kids Long Sleeve T-Shirt",
+    description:
+      "A hilarious pickleball tee that's sure to get laughs on the court. Perfect for players who love a good pun.",
+    image:
+      "https://m.media-amazon.com/images/I/81s+YCoHS8L._AC_UL320_.jpg",
+    tags: ["men's", "funny", "long sleeve", "graphic"],
+    affiliateUrl: `https://www.amazon.com/dp/B09R462KB2?tag=${AFFILIATE_TAG}`,
+  },
+  {
+    id: "445",
+    asin: "B003QOOLPC",
+    title: "Wicking Long Sleeve Sun Protection Athletic Shirt for Running, Hiking, Fishing, and Outdoor Activities",
+    description:
+      "Long sleeve pickleball shirt offering extra sun protection and coverage. Ideal for outdoor play in any season.",
+    image:
+      "https://m.media-amazon.com/images/I/61x7qdgduBL._AC_UL320_.jpg",
+    tags: ["unisex", "performance", "long sleeve"],
+    affiliateUrl: `https://www.amazon.com/dp/B003QOOLPC?tag=${AFFILIATE_TAG}`,
   }
-
 ];
 
 export default shirts;

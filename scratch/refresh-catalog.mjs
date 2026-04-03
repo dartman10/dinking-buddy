@@ -76,24 +76,6 @@ const SEARCH_QUERIES = [
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36";
 
-const HEADERS = {
-  "User-Agent": UA,
-  Accept:
-    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-  "Accept-Language": "en-US,en;q=0.9",
-  "Accept-Encoding": "gzip, deflate, br",
-  "Cache-Control": "max-age=0",
-  "Sec-Ch-Ua":
-    '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-  "Sec-Ch-Ua-Mobile": "?0",
-  "Sec-Ch-Ua-Platform": '"macOS"',
-  "Sec-Fetch-Dest": "document",
-  "Sec-Fetch-Mode": "navigate",
-  "Sec-Fetch-Site": "none",
-  "Sec-Fetch-User": "?1",
-  "Upgrade-Insecure-Requests": "1",
-};
-
 function rand(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -185,99 +167,110 @@ function readNewAsins(existingAsins) {
 // ═══════════════════════════════════════════════════════════════════════
 // Playwright discovery — search Amazon with a real browser
 // ═══════════════════════════════════════════════════════════════════════
-async function discoverAsins(existingAsins) {
-  const { chromium } = await import("playwright");
+async function discoverAsinsWithPage(page, existingAsins) {
+  console.log("🔎 Discovering new products via Amazon search...\n");
 
-  console.log("🎭 Launching Playwright (headless Chromium)...\n");
+  // Map of ASIN → { title, image } extracted from search results
+  const foundProducts = new Map();
 
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext({
-    userAgent: UA,
-    viewport: { width: 1440, height: 900 },
-    locale: "en-US",
-  });
-  const page = await context.newPage();
+  for (let qi = 0; qi < SEARCH_QUERIES.length; qi++) {
+    const query = SEARCH_QUERIES[qi];
 
-  const foundAsins = new Set();
+    for (let pg = 1; pg <= 2; pg++) {
+      const url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&page=${pg}`;
+      console.log(`  🔍 "${query}" page ${pg}...`);
 
-  try {
-    // Warm up — visit homepage to establish cookies/session
-    console.log("  Visiting amazon.com homepage...");
-    await page.goto("https://www.amazon.com/", { waitUntil: "domcontentloaded" });
-    await sleep(rand(2000, 4000));
+      try {
+        await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
+        // Wait for search results to render
+        await page.waitForSelector('[data-asin]', { timeout: 8000 }).catch(() => {});
 
-    for (let qi = 0; qi < SEARCH_QUERIES.length; qi++) {
-      const query = SEARCH_QUERIES[qi];
+        // Extract ASIN + title + image from search result cards
+        const pageProducts = await page.evaluate(() => {
+          const els = document.querySelectorAll("[data-asin]");
+          return [...els]
+            .map((el) => {
+              const asin = el.getAttribute("data-asin");
+              if (!asin || !/^B[A-Z0-9]{9}$/.test(asin)) return null;
 
-      for (let pg = 1; pg <= 2; pg++) {
-        const url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}&page=${pg}`;
-        console.log(`  🔍 "${query}" page ${pg}...`);
+              // Title: try multiple selectors, prefer full text
+              // Amazon puts full title in the h2 link's combined text or aria-label
+              const h2Link = el.querySelector("h2 a");
+              let title = "";
+              if (h2Link) {
+                title = h2Link.getAttribute("aria-label")
+                  || h2Link.textContent?.trim()
+                  || "";
+              }
+              if (!title) {
+                const titleRecipe = el.querySelector('[data-cy="title-recipe"] a');
+                title = titleRecipe?.textContent?.trim() || "";
+              }
+              // Also try the span with class that contains full title
+              if (!title) {
+                const fullSpan = el.querySelector("h2 .a-text-normal");
+                title = fullSpan?.textContent?.trim() || "";
+              }
 
-        try {
-          await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
-          // Wait for search results to render
-          await page.waitForSelector('[data-asin]', { timeout: 8000 }).catch(() => {});
+              // Image: look for the product image
+              const imgEl = el.querySelector("img.s-image");
+              const image = imgEl?.getAttribute("src") || "";
 
-          // Extract ASINs via data-asin attribute
-          const pageAsins = await page.evaluate(() => {
-            const els = document.querySelectorAll("[data-asin]");
-            return [...els]
-              .map((el) => el.getAttribute("data-asin"))
-              .filter((a) => a && /^B[A-Z0-9]{9}$/.test(a));
-          });
+              // Skip sponsored ad cards with no real title
+              if (!title || /^sponsored/i.test(title.replace(/\s/g, ""))) return null;
 
-          let newCount = 0;
-          for (const asin of pageAsins) {
-            if (!existingAsins.has(asin) && !foundAsins.has(asin)) {
-              foundAsins.add(asin);
-              newCount++;
-            }
+              return { asin, title, image };
+            })
+            .filter(Boolean);
+        });
+
+        let newCount = 0;
+        for (const prod of pageProducts) {
+          if (!existingAsins.has(prod.asin) && !foundProducts.has(prod.asin)) {
+            foundProducts.set(prod.asin, { title: prod.title, image: prod.image });
+            newCount++;
           }
-          console.log(
-            `    ${pageAsins.length} results, +${newCount} new (${foundAsins.size} total)`
-          );
-
-          // Check for CAPTCHA
-          const isCaptcha = await page.evaluate(() =>
-            document.body.innerText.toLowerCase().includes("captcha")
-          );
-          if (isCaptcha) {
-            console.log("    ⚠ CAPTCHA detected — pausing...");
-            await sleep(rand(15000, 30000));
-          }
-        } catch (e) {
-          console.log(`    Error: ${e.message.slice(0, 80)}`);
         }
+        console.log(
+          `    ${pageProducts.length} results, +${newCount} new (${foundProducts.size} total)`
+        );
 
-        await sleep(rand(2000, 5000));
+        // Check for CAPTCHA
+        const isCaptcha = await page.evaluate(() =>
+          document.body.innerText.toLowerCase().includes("captcha")
+        );
+        if (isCaptcha) {
+          console.log("    ⚠ CAPTCHA detected — pausing...");
+          await sleep(rand(15000, 30000));
+        }
+      } catch (e) {
+        console.log(`    Error: ${e.message.slice(0, 80)}`);
       }
 
-      // Longer pause between queries
-      if (qi < SEARCH_QUERIES.length - 1) {
-        await sleep(rand(4000, 8000));
-      }
+      await sleep(rand(2000, 5000));
     }
-  } finally {
-    await browser.close();
+
+    // Longer pause between queries
+    if (qi < SEARCH_QUERIES.length - 1) {
+      await sleep(rand(4000, 8000));
+    }
   }
 
-  console.log(`\n  🎭 Discovery complete: ${foundAsins.size} new ASINs found\n`);
-  return [...foundAsins];
+  console.log(`\n  🎭 Discovery complete: ${foundProducts.size} new products found\n`);
+  return foundProducts;
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// Fetch a single product page
+// Fetch a single product page (Playwright — avoids CAPTCHAs)
 // ═══════════════════════════════════════════════════════════════════════
-async function fetchProduct(asin) {
+async function fetchProductWithPage(page, asin) {
   try {
-    const resp = await fetch(`https://www.amazon.com/dp/${asin}`, {
-      headers: {
-        ...HEADERS,
-        Referer: "https://www.amazon.com/s?k=pickleball+shirt",
-      },
-      redirect: "follow",
+    const resp = await page.goto(`https://www.amazon.com/dp/${asin}`, {
+      waitUntil: "domcontentloaded",
+      timeout: 15000,
     });
-    const html = await resp.text();
+    const status = resp?.status() || 0;
+    const html = await page.content();
 
     // CAPTCHA detection
     if (html.length < 10000 && /captcha/i.test(html)) {
@@ -285,7 +278,7 @@ async function fetchProduct(asin) {
     }
 
     // Dead product detection
-    if (resp.status === 404) return { status: "dead" };
+    if (status === 404) return { status: "dead" };
     const deadPatterns = [
       /currently unavailable/i,
       /no longer available/i,
@@ -297,8 +290,6 @@ async function fetchProduct(asin) {
       return { status: "dead" };
     }
     if (deadPatterns.some((p) => p.test(html))) {
-      // Double-check: "currently unavailable" can appear in variants too,
-      // so only flag dead if there's no productTitle
       const hasTitle = /id="productTitle"/i.test(html);
       if (!hasTitle) return { status: "dead" };
     }
@@ -484,7 +475,7 @@ function autoDescription(title) {
 // ═══════════════════════════════════════════════════════════════════════
 // Check existing products for dead links
 // ═══════════════════════════════════════════════════════════════════════
-async function checkExistingProducts(entries) {
+async function checkExistingProducts(entries, page) {
   console.log(
     `🩺 Checking ${entries.length} existing products for dead links...\n`
   );
@@ -493,15 +484,9 @@ async function checkExistingProducts(entries) {
   let checked = 0;
   let captchaStreak = 0;
 
-  // Warm up session
-  try {
-    await fetch("https://www.amazon.com/", { headers: HEADERS });
-    await sleep(rand(2000, 4000));
-  } catch {}
-
   for (const entry of entries) {
     checked++;
-    const result = await fetchProduct(entry.asin);
+    const result = await fetchProductWithPage(page, entry.asin);
 
     if (result.status === "dead") {
       console.log(
@@ -549,9 +534,57 @@ async function checkExistingProducts(entries) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// Fetch details for new products
+// Build new product entries from discovery data (no individual page visits)
 // ═══════════════════════════════════════════════════════════════════════
-async function fetchNewProducts(newAsins) {
+function buildNewProducts(discoveredProducts) {
+  const entries = [...discoveredProducts.entries()];
+  const capped = entries.slice(0, MAX_NEW_PRODUCTS);
+  console.log(
+    `🆕 Processing ${capped.length} new products from search results (cap: ${MAX_NEW_PRODUCTS})...\n`
+  );
+
+  const products = [];
+
+  for (const [asin, data] of capped) {
+    const title = decodeEntities(data.title || "");
+
+    if (!title) {
+      console.log(`  ⏭ ${asin} — no title in search results, skipping`);
+      continue;
+    }
+
+    // Filter out non-apparel products
+    if (!isApparel(title)) {
+      console.log(
+        `  ⏭ ${asin} — not apparel, skipping ("${title.slice(0, 50)}")`
+      );
+      continue;
+    }
+
+    // Clean up search-result image URL (use higher res)
+    let image = data.image || "";
+    if (image && image.includes("m.media-amazon.com")) {
+      image = cleanUrl(image);
+    }
+
+    products.push({
+      asin,
+      title,
+      description: autoDescription(title),
+      image,
+      tags: autoTags(title),
+    });
+    console.log(`  ✅ ${asin} — ${title.slice(0, 60)}`);
+  }
+
+  console.log(`\n  New products ready: ${products.length}\n`);
+  return products;
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// Fetch new products by visiting individual pages (fallback for manual ASINs)
+// ═══════════════════════════════════════════════════════════════════════
+async function fetchNewProductPages(newAsins, page) {
   const capped = newAsins.slice(0, MAX_NEW_PRODUCTS);
   console.log(
     `🆕 Fetching details for ${capped.length} new products (cap: ${MAX_NEW_PRODUCTS})...\n`
@@ -560,21 +593,14 @@ async function fetchNewProducts(newAsins) {
   const products = [];
   let captchaStreak = 0;
 
-  // Warm up session
-  try {
-    await fetch("https://www.amazon.com/", { headers: HEADERS });
-    await sleep(rand(2000, 4000));
-  } catch {}
-
   for (let i = 0; i < capped.length; i++) {
     const asin = capped[i];
-    const result = await fetchProduct(asin);
+    const result = await fetchProductWithPage(page, asin);
 
     if (result.status === "alive" && result.title) {
       captchaStreak = 0;
       const title = result.title;
 
-      // Filter out non-apparel products (paddles, socks, bags, etc.)
       if (!isApparel(title)) {
         console.log(
           `  ⏭ [${i + 1}/${capped.length}] ${asin} — not apparel, skipping ("${title.slice(0, 50)}")`
@@ -602,8 +628,6 @@ async function fetchNewProducts(newAsins) {
         console.log(`  💤 Backing off ${Math.round(backoff / 1000)}s...`);
         await sleep(backoff);
         captchaStreak = 0;
-      } else {
-        await sleep(rand(8000, 15000));
       }
     } else if (result.status === "dead") {
       console.log(
@@ -617,7 +641,6 @@ async function fetchNewProducts(newAsins) {
 
     await humanDelay();
 
-    // Coffee break every 15 new products
     if ((i + 1) % 15 === 0 && i + 1 < capped.length) {
       console.log(`  ☕ Coffee break...`);
       await coffeeBreak();
@@ -719,25 +742,47 @@ async function main() {
   const existingAsins = new Set(existing.map((e) => e.asin));
   console.log(`📦 Current catalog: ${existing.length} products\n`);
 
+  // Launch Playwright once — shared across all phases
+  const { chromium } = await import("playwright");
+  console.log("🎭 Launching Playwright (headless Chromium)...\n");
+  const browser = await chromium.launch({ headless: true });
+  const context = await browser.newContext({
+    userAgent: UA,
+    viewport: { width: 1440, height: 900 },
+    locale: "en-US",
+  });
+  const page = await context.newPage();
+
+  // Warm up — visit homepage to establish cookies/session
+  await page.goto("https://www.amazon.com/", { waitUntil: "domcontentloaded" });
+  await sleep(rand(2000, 4000));
+
   let deadAsins = [];
   let newProducts = [];
 
-  // 2. Check existing products for dead links
-  if (!ADD_ONLY) {
-    deadAsins = await checkExistingProducts(existing);
-  }
+  try {
+    // 2. Check existing products for dead links
+    if (!ADD_ONLY) {
+      deadAsins = await checkExistingProducts(existing, page);
+    }
 
-  // 3. Read new ASINs from file OR discover via Playwright
-  if (!CHECK_ONLY) {
-    let newAsins;
-    if (DISCOVER) {
-      newAsins = await discoverAsins(existingAsins);
-    } else {
-      newAsins = readNewAsins(existingAsins);
+    // 3. Discover new products OR read ASINs from file
+    if (!CHECK_ONLY) {
+      if (DISCOVER) {
+        const discoveredProducts = await discoverAsinsWithPage(page, existingAsins);
+        if (discoveredProducts.size > 0) {
+          newProducts = buildNewProducts(discoveredProducts);
+        }
+      } else {
+        const newAsins = readNewAsins(existingAsins);
+        if (newAsins.length > 0) {
+          // For manual ASINs, we still need to fetch individual pages
+          newProducts = await fetchNewProductPages(newAsins, page);
+        }
+      }
     }
-    if (newAsins.length > 0) {
-      newProducts = await fetchNewProducts(newAsins);
-    }
+  } finally {
+    await browser.close();
   }
 
   // 4. Summary
